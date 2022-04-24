@@ -1,0 +1,128 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+/* Variables */
+
+:root {
+    /* Font Styles */
+    font-family: 'Roboto Slab', serif;
+
+    /* Color Variables */
+
+    /* Body or Main Colors */
+    --color-primary: #4FBDBA;
+    --color-secondary: #AEFEFF;
+    --color-tertiary: #35858B;
+
+    --color-bg: #FAFAFA;
+    --color-primary-bg: #dbe7e4;
+    --color-secondary-bg: #c5dedd;
+    --color-tertiary-bg: #041C32;
+
+    /* Declarative Commonly used colors */
+    --gray-1: #F5F5F5;
+    --gray-3: #F1F1F1;
+    --gray-4: #D3D3D3;
+    --gray-5: #C0C0C0;
+    --gray-7: #A9A9A9;
+    --gray-9: #808080;
+    --gray-10: #303030;
+    --black: #000000;
+    --white: #FFFFFF;
+    --black-shade-1: #181818;
+    --black-shade-2: #101010;
+    --black-shade-3: #080808;
+
+    /* Typography Colors */
+    --color-text-primary: var(var(--black-shade-2));
+    --color-text-heading: var(var(--black));
+    --color-text-sub-heading: var(var(--black-shade-1));
+    --color-text-dimmed: var(--gray-9);
+    --color-text-active: var(--color-tertiary);
+
+    /* Shadow Colors */
+    --color-shadow-bg: var(--gray-9);
+
+    /* Input Form colors */
+    --color-form-element-border: var(--black);
+    --color-form-element-border-focus: var(--color-primary);
+    --color-form-element-border-error: var(--color-error);
+    --color-form-text-placeholder: var(--gray-4);
+    --color-form-element-disabled: var(--gray-9);
+
+    /* Feedback Alert Colors */
+    --color-warning: #eed202;
+    --color-error: #FF0000;
+    --color-success: #009E60;
+    --color-alert-primary-bg: #7FD2E6;
+    --color-alert-primary-text: #29438b;
+    --color-alert-secondary-bg: #eaeaec;
+    --color-alert-secondary-text: #696b79;
+    --color-alert-success-bg: #84f1c9;
+    --color-alert-success-text: #1b7052;
+    --color-alert-warning-bg: #ffe7c5;
+    --color-alert-warning-text: #ff9204;
+    --color-alert-error-bg: #fcc5c5;
+    --color-alert-error-text: #dc3545;
+
+    /* Badge Colors */
+    --color-online: #00FF00;
+    --color-offline: #FF0000;
+    --color-idle: #D3D3D3;
+    --color-badge-bg: #FF0000;
+    --color-badge-text: #ffffff;
+
+    /* End of Color Variables*/
+
+    /* Border Radius */
+    --br-50: 50%;
+    --br-xl: 15px;
+    --br-lg: 10px;
+    --br-md: 6px;
+    --br-sm: 4px;
+    --br-xs: 3px;
+
+    /* Standard font, line-height and font-weight */
+    --text: 1.25rem;
+    --line-ht: 1.875rem;
+    --weight: 400;
+
+    /* Font sizes */
+    --text-xxl: 3rem;
+    --text-xl: 2.5rem;
+    --text-lg: 2rem;
+    --text-md: 1.5rem;
+    --text-sm: 1rem;
+    --text-xs: 0.75rem;
+    --text-xxs: 0.5rem;
+
+    /* Line heights, Line heights are being designed with ratio of 1.5 to font size just above */
+    --line-ht-xxl: 4.5rem;
+    --line-ht-xl: 3.75rem;
+    --line-ht-lg: 3rem;
+    --line-ht-md: 2.25rem;
+    --line-ht-sm: 1.5rem;
+    --line-ht-xs: 1.125rem;
+    --line-ht-xxs: 0.75rem;
+
+    /* Font weights */
+    --weight-thin: 100;
+    --weight-light: 300;
+    --weight-regular: 500;
+    --weight-sbold: 600;
+    --weight-bold: 700;
+    --weight-xbold: 900;
+
+    /* Heading Font sizes for better semantics (to avoid using h1,h2..tags where it's not needed, instead you can use utility class based on these variables). Also for following this design system of 5px to maintain consistency these can be used in h1,h2... tags itself*/
+    --h1: 3rem;
+    --h2: 2.5rem;
+    --h3: 2rem;
+    --h4: 1.75rem;
+    --h5: 1.5rem;
+    --h6: 1.25rem;
+
+    /* z-indices */
+    --z-index-toast: 9;
+    --z-index-badges: 3;
+}

@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: var(--color-text-primary);
+    scroll-behavior: smooth;
+    word-wrap: break-word;
+}
+
+body {
+    background-color: var(--color-bg);
+    min-height: 100vh;
+    width: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: inherit;
+    font: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+a,
+i {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.icon,
+i {
+    pointer-events: none;
+}
+
+.active {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+/* font utilities */
+p,
+div,
+section,
+aside,
+footer,
+header,
+nav,
+main {
+    font-weight: var(--weight-regular);
+    font-size: var(--text-md);
+    line-height: var(--line-ht-md);
+}
+
+a {
+    font-weight: var(--weight-regular);
+    font-size: inherit;
+    line-height: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--weight-bold);
+}
+
+h1 {
+    font-size: var(--h1);
+    line-height: var(--line-ht-xxl);
+}
+
+h2 {
+    font-size: var(--h2);
+    line-height: var(--line-ht-xl);
+}
+
+h3 {
+    font-size: var(--h3);
+    line-height: var(--line-ht-lg);
+}
+
+h4 {
+    font-size: var(--h4);
+    line-height: var(--line-ht-lg);
+}
+
+h5 {
+    font-size: var(--h5);
+    line-height: var(--line-ht-md);
+}
+
+h6 {
+    font-size: var(--h6);
+    line-height: var(--line-ht-sm);
+}
+
+.bold {
+    font-weight: var(--weight-bold);
+}
+
+.xbold {
+    font-weight: var(--weight-xbold);
+}
