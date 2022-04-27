@@ -159,6 +159,11 @@ h6 {
     line-height: var(--line-ht-xxl);
 }
 
+.text-xxxl {
+    font-size: var(--text-xxxl);
+    line-height: var(--line-ht-xxxl);
+}
+
 .text-center {
     text-align: center;
 }

@@ -92,6 +92,7 @@
     --weight: 400;
 
     /* Font sizes */
+    --text-xxxl: 5rem;
     --text-xxl: 3rem;
     --text-xl: 2.5rem;
     --text-lg: 2rem;
@@ -101,6 +102,7 @@
     --text-xxs: 0.5rem;
 
     /* Line heights, Line heights are being designed with ratio of 1.5 to font size just above */
+    --line-ht-xxxl: 7.5rem;
     --line-ht-xxl: 4.5rem;
     --line-ht-xl: 3.75rem;
     --line-ht-lg: 3rem;
