@@ -73,6 +73,9 @@
     --color-idle: #D3D3D3;
     --color-badge-bg: #FF0000;
     --color-badge-text: #ffffff;
+    --color-badge-primary-bg: var(--color-primary);
+    --color-badge-secondary-bg: var(--gray-5);
+    --color-badge-highlight-bg: #FF0000;
 
     /* End of Color Variables*/
 
