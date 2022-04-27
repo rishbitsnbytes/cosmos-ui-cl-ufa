@@ -33,8 +33,10 @@ a,
 i {
     text-decoration: none;
     display: inline-block;
-    width: 100%;
-    height: 100%;
+}
+
+button, a {
+    cursor: pointer;
 }
 
 .icon,
@@ -43,7 +45,8 @@ i {
 }
 
 .active {
-    border-bottom: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-tertiary);
+    font-weight: var(--weight-xbold);
 }
 
 ol,
@@ -81,40 +84,132 @@ h6 {
     font-weight: var(--weight-bold);
 }
 
-h1 {
+h1,
+.h1 {
     font-size: var(--h1);
     line-height: var(--line-ht-xxl);
 }
 
-h2 {
+h2,
+.h2 {
     font-size: var(--h2);
     line-height: var(--line-ht-xl);
 }
 
-h3 {
+h3,
+.h3 {
     font-size: var(--h3);
     line-height: var(--line-ht-lg);
 }
 
-h4 {
+h4,
+.h4 {
     font-size: var(--h4);
     line-height: var(--line-ht-lg);
 }
 
-h5 {
+h5,
+.h5 {
     font-size: var(--h5);
     line-height: var(--line-ht-md);
 }
 
-h6 {
+h6,
+.h6 {
     font-size: var(--h6);
     line-height: var(--line-ht-sm);
 }
 
-.bold {
+/* Font weights */
+.font-thin {
+    font-weight: var(--weight-thin);
+}
+
+.font-light {
+    font-weight: var(--weight-light);
+}
+
+.font-regular {
+    font-weight: var(--weight-regular);
+}
+
+.font-sbold {
+    font-weight: var(--weight-sbold);
+}
+
+.font-bold {
     font-weight: var(--weight-bold);
 }
 
 .xbold {
     font-weight: var(--weight-xbold);
 }
+
+/* Font Sizes */
+
+.text-xxs {
+    font-size: var(--text-xxs);
+    line-height: var(--line-ht-xxs);
+}
+
+.text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--line-ht-xs);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--line-ht-sm);
+}
+
+.text-md {
+    font-size: var(--text-md);
+    line-height: var(--line-ht-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--line-ht-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--line-ht-xl);
+}
+
+.text-xxl {
+    font-size: var(--text-xxl);
+    line-height: var(--line-ht-xxl);
+}
+
+.text-xxxl {
+    font-size: var(--text-xxxl);
+    line-height: var(--line-ht-xxxl);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Positions */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+   position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.static {
+    position: static;
+}
+
