@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rishabh Rathore">
+    <link rel="stylesheet" href="./inputs.css">
+
+    <title>Input Components</title>
+</head>
+
+
+<body>
+     <!-- Input default -->
+
+     <div class="flex-col my-1 mx-0-5 w-20">
+        <label for="name" class="font-bold mx-0-5 my-0-25">Name</label>
+        <input type="text" id="name" class="input-default p-0-5 rounded-md p-0-5 rounded-md" placeholder="Charles Darwin">
+    </div>
+
+
+    <!-- Inputs with warning validation style -->
+
+    <div class="flex-col my-1 mx-0-5 w-20">
+        <label for="password" class="font-bold mx-0-5 my-0-25">Password</label>
+        <input type="text" id="password" class="input-default p-0-5 rounded-md input-warning" placeholder="password">
+        <span class="input-warning-msg text-sm font-sbold m-0-5">Weak Password</span>
+    </div>
+
+
+    <!-- Inputs with success validation style -->
+
+    <div class="flex-col my-1 mx-0-5 w-20">
+        <label for="password" class="font-bold mx-0-5 my-0-25">Password</label>
+        <input type="text" id="password" class="input-default p-0-5 rounded-md input-success" placeholder="password">
+        <span class="input-success-msg text-sm font-sbold m-0-5">Strong Password</span>
+    </div>
+
+
+    <!-- Inputs with error validation style -->
+
+    <div class="flex-col my-1 mx-0-5 w-20">
+        <label for="email" class="font-bold mx-0-5 my-0-25">E-mail</label>
+        <input type="e-mail" id="email" class="input-default p-0-5 rounded-md input-error" placeholder="example@example.com">
+        <span class="input-error-msg text-sm font-sbold m-0-5">Incorrect E-mail</span>
+    </div>
+
+
+    <!-- Input Textbox -->
+
+    <div class="flex-col my-1 mx-0-5 w-40">
+        <label for="input-textbox" class="font-bold mx-0-5 my-0-25">Comments
+        </label>
+        <textarea class="input-textbox w-full h-15 p-1 rounded-md" id="input-textbox" placeholder="write your thoughts..."></textarea>
+    </div>
+</body>

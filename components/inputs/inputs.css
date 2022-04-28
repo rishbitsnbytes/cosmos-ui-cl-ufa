@@ -1,0 +1,48 @@
+@import url(../../styles/all-imports.css);
+
+@import url(/Styles/variables-and-fonts.css);
+
+
+/* <!-- Inputs default --> */
+
+.input-default {
+    border: 1px solid var(--color-form-element-border);
+}
+
+
+/* Input Validation Feedbacks */
+/* Inputs with warning validation style */
+
+.input-warning {
+    border: 1px solid var(--color-form-element-border-warning);
+}
+
+.input-warning-msg {
+    color: var(--color-form-element-border-warning);
+}
+
+/* <!-- Inputs with success validation style --> */
+
+.input-success {
+    border: 1px solid var(--color-form-element-border-success);
+}
+
+.input-success-msg {
+    color: var(--color-form-element-border-success);
+}
+
+/* <!-- Inputs with error validation style --> */
+
+.input-error {
+    border: 1px solid var(--color-form-element-border-error);
+}
+
+.input-error-msg {
+    color: var(--color-form-element-border-error);
+}
+
+/* <!-- Input Textbox --> */
+
+.input-textbox {
+    border: 1px solid var(--color-form-element-border);
+}

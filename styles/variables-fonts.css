@@ -49,7 +49,9 @@
     /* Input Form colors */
     --color-form-element-border: var(--black);
     --color-form-element-border-focus: var(--color-primary);
+    --color-form-element-border-success: var(--color-success);
     --color-form-element-border-error: var(--color-error);
+    --color-form-element-border-warning: var(--color-warning);
     --color-form-text-placeholder: var(--gray-4);
     --color-form-element-disabled: var(--gray-9);
 
