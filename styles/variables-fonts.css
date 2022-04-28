@@ -19,6 +19,7 @@
     --color-primary-bg: #dbe7e4;
     --color-secondary-bg: #c5dedd;
     --color-tertiary-bg: #041C32;
+    --color-primary-bg-opacity: rgba(79, 189, 186, 0.7);
 
     /* Declarative Commonly used colors */
     --gray-1: #F5F5F5;
@@ -40,14 +41,17 @@
     --color-text-sub-heading: var(var(--black-shade-1));
     --color-text-dimmed: var(--gray-9);
     --color-text-active: var(--color-tertiary);
-
+    --color-text-contrast-to-primary: var(--white);
+    
     /* Shadow Colors */
     --color-shadow-bg: var(--gray-9);
 
     /* Input Form colors */
     --color-form-element-border: var(--black);
     --color-form-element-border-focus: var(--color-primary);
+    --color-form-element-border-success: var(--color-success);
     --color-form-element-border-error: var(--color-error);
+    --color-form-element-border-warning: var(--color-warning);
     --color-form-text-placeholder: var(--gray-4);
     --color-form-element-disabled: var(--gray-9);
 
@@ -57,7 +61,7 @@
     --color-success: #009E60;
     --color-alert-primary-bg: #7FD2E6;
     --color-alert-primary-text: #29438b;
-    --color-alert-secondary-bg: #eaeaec;
+    --color-alert-secondary-bg: var(--gray-5);
     --color-alert-secondary-text: #696b79;
     --color-alert-success-bg: #84f1c9;
     --color-alert-success-text: #1b7052;
@@ -72,16 +76,21 @@
     --color-idle: #D3D3D3;
     --color-badge-bg: #FF0000;
     --color-badge-text: #ffffff;
+    --color-badge-primary-bg: var(--color-primary);
+    --color-badge-secondary-bg: var(--gray-5);
+    --color-badge-highlight-bg: #FF0000;
 
     /* End of Color Variables*/
 
     /* Border Radius */
-    --br-50: 50%;
-    --br-xl: 15px;
-    --br-lg: 10px;
-    --br-md: 6px;
-    --br-sm: 4px;
-    --br-xs: 3px;
+    --br-0: 0rem;  /* 0px */
+    --br-max: 9999px;  /* max */
+    --br-50: 50%;  /* circle */
+    --br-xl: 1.5rem;  /* 15px*/
+    --br-lg: 1rem;  /* 10px */
+    --br-md: 0.6rem;  /* 6px */
+    --br-sm: 0.4rem;  /* 4px */
+    --br-xs: 0.3rem;  /* 3px */
 
     /* Standard font, line-height and font-weight */
     --text: 1.25rem;
@@ -89,19 +98,25 @@
     --weight: 400;
 
     /* Font sizes */
+    --text-xxxl: 5rem;
     --text-xxl: 3rem;
     --text-xl: 2.5rem;
     --text-lg: 2rem;
+    --text-md-2: 1.75rem;
     --text-md: 1.5rem;
+    --text-sm-2: 1.25rem;
     --text-sm: 1rem;
     --text-xs: 0.75rem;
     --text-xxs: 0.5rem;
 
     /* Line heights, Line heights are being designed with ratio of 1.5 to font size just above */
+    --line-ht-xxxl: 7.5rem;
     --line-ht-xxl: 4.5rem;
     --line-ht-xl: 3.75rem;
     --line-ht-lg: 3rem;
+    --line-height-md-2: 2.625rem;
     --line-ht-md: 2.25rem;
+    --line-height-sm-2: 1.875rem;
     --line-ht-sm: 1.5rem;
     --line-ht-xs: 1.125rem;
     --line-ht-xxs: 0.75rem;
