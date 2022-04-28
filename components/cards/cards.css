@@ -1,0 +1,48 @@
+@import url(../../styles/all-imports.css);
+
+
+/* <!-- Card Basic --> */
+
+.card-container {
+    box-shadow: 0px 5px 5px 1px var(--color-shadow-bg);
+}
+
+.card-container:hover {
+    box-shadow: 0px 5px 10px 1px var(--color-shadow-bg);
+    border: 1px solid var(--color-shadow-bg);
+}
+
+.card-subtitle {
+    color: var(--color-text-sub-heading);
+}
+
+.card-para {
+    color: var(--color-text-dimmed);
+}
+
+.card-button {
+    color: var(--color-primary);
+}
+
+.card-button:hover {
+    background: rgba(79, 189, 186, 0.2);
+}
+
+/* <!-- Card with Badge --> */
+
+.card-badge {
+    top: 1re
+}
+
+/* <!-- Card with Dismiss --> */
+
+.card-dismiss-button {
+    top: 0.5rem;
+    right: 1rem;
+}
+
+/* <!-- Card with Text Overlay --> */
+
+.card-text-overlay-container {
+    background: var(--color-primary-bg-opacity);
+}
