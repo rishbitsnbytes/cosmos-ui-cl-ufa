@@ -198,8 +198,18 @@ h6,
     line-height: var(--line-ht-xxxl);
 }
 
+/* Text Alignment */
+
+.text-left {
+    text-align: left;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 /* Positions */
