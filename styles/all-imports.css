@@ -1,7 +1,15 @@
 /* General Files */
-@import url(/Styles/reset.css);
-@import url(/Styles/variables-and-fonts.css);
-@import url(./space-utils/margin.css);
-@import url(./space-utils/padding.css);
+@import url(/styles/reset.css);
+@import url(/styles/variables-fonts.css);
+@import url(./utils/space-utils/margin.css);
+@import url(./utils/space-utils/padding.css);
+@import url(./utils/space-utils/height.css);
+@import url(./utils/space-utils/width.css);
+@import url(../styles/utils/layout-utils.css);
 
 /* Components */
+@import url(../components/alerts/alerts.css);
+@import url(../components//avatars/avatars.css);
+@import url(../components/badges/badges.css);
+@import url(../components/buttons/buttons.css);
+@import url(../components/cards/cards.css);
