@@ -1,0 +1,55 @@
+@import url(../../styles/all-imports.css);
+
+/* Avatar Live Status Badges */
+
+.status {
+    bottom: 5%;
+    right: 5%;
+}
+
+.online {
+    background-color: var(--color-online);
+}
+
+.offline {
+    background-color: var(--color-offline);
+}
+
+.idle {
+    background-color: var(--color-idle);
+}
+
+/* Icon Notification Badges */
+
+.badge-notification-count {
+    top: -80%;
+    right: -40%;
+    background-color: var(--color-badge-bg);
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+/* Heading Badges */
+
+.heading-badge-primary {
+    background-color: var(--color-alert-primary-bg);
+}
+
+.heading-badge-secondary {
+    background-color: var(--color-alert-secondary-bg);
+}
+
+/* Text Badges */
+
+.text-badge-primary {
+    background-color: var(--color-badge-primary-bg);
+}
+
+.text-badge-secondary {
+    background-color: var(--color-badge-secondary-bg);
+}
+
+.text-badge-highlight {
+    background-color: var(--color-badge-highlight-bg);
+    color: var(--white);
+}
