@@ -19,6 +19,7 @@
     --color-primary-bg: #dbe7e4;
     --color-secondary-bg: #c5dedd;
     --color-tertiary-bg: #041C32;
+    --color-primary-bg-opacity: rgba(79, 189, 186, 0.7);
 
     /* Declarative Commonly used colors */
     --gray-1: #F5F5F5;
@@ -99,7 +100,9 @@
     --text-xxl: 3rem;
     --text-xl: 2.5rem;
     --text-lg: 2rem;
+    --text-md-2: 1.75rem;
     --text-md: 1.5rem;
+    --text-sm-2: 1.25rem;
     --text-sm: 1rem;
     --text-xs: 0.75rem;
     --text-xxs: 0.5rem;
@@ -109,7 +112,9 @@
     --line-ht-xxl: 4.5rem;
     --line-ht-xl: 3.75rem;
     --line-ht-lg: 3rem;
+    --line-height-md-2: 2.625rem;
     --line-ht-md: 2.25rem;
+    --line-height-sm-2: 1.875rem;
     --line-ht-sm: 1.5rem;
     --line-ht-xs: 1.125rem;
     --line-ht-xxs: 0.75rem;

@@ -37,6 +37,7 @@ i {
 
 button, a {
     cursor: pointer;
+    background-color: unset;
 }
 
 .icon,
@@ -162,9 +163,19 @@ h6,
     line-height: var(--line-ht-sm);
 }
 
+.text-sm-2 {
+    font-size: var(--text-sm-2);
+    line-height: var(--line-ht-sm-2);
+}
+
 .text-md {
     font-size: var(--text-md);
     line-height: var(--line-ht-md);
+}
+
+.text-md-2 {
+    font-size: var(--text-md-2);
+    line-height: var(--line-ht-md-2);
 }
 
 .text-lg {

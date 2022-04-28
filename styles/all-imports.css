@@ -8,3 +8,8 @@
 @import url(../styles/utils/layout-utils.css);
 
 /* Components */
+@import url(../components/alerts/alerts.css);
+@import url(../components//avatars/avatars.css);
+@import url(../components/badges/badges.css);
+@import url(../components/buttons/buttons.css);
+@import url(../components/cards/cards.css);
