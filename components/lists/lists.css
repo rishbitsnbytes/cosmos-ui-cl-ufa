@@ -1,0 +1,17 @@
+@import url(../../styles/all-imports.css);
+
+
+/* Lists */
+
+.list-spaced {
+    list-style: disc;
+}
+
+.list-item {
+    list-style-position: inside;
+}
+
+.ordered-list,
+.stacked-list {
+    list-style: decimal;
+}
