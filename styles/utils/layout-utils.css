@@ -41,6 +41,31 @@
     flex-wrap: wrap;
 }
 
+.flex-gap-0-5 {
+    gap: 0.5rem;
+}
+
+.flex-gap-1 {
+    gap: 1rem;
+}
+
+.flex-gap-2 {
+    gap: 2rem;
+}
+
+.flex-gap-3 {
+    gap: 3rem;
+}
+
+.flex-gap-4 {
+    gap: 4rem;
+}
+
+.flex-gap-5 {
+    gap: 5rem;
+}
+
+
 /* Display Utilities*/
 
 .block {
