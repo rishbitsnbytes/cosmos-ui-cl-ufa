@@ -1,0 +1,128 @@
+/* Flex */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-start {
+    justify-content: flex-start;
+}
+
+.flex-justify-end {
+    justify-content: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-gap-0-5 {
+    gap: 0.5rem;
+}
+
+.flex-gap-1 {
+    gap: 1rem;
+}
+
+.flex-gap-2 {
+    gap: 2rem;
+}
+
+.flex-gap-3 {
+    gap: 3rem;
+}
+
+.flex-gap-4 {
+    gap: 4rem;
+}
+
+.flex-gap-5 {
+    gap: 5rem;
+}
+
+
+/* Display Utilities*/
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+.contents {
+    display: contents;
+}
+
+/* Border-radii */
+
+.rounded-none {
+    border-radius: var(--br-0);
+}
+
+.rounded-inherit {
+    border-radius: inherit;
+}
+
+/* For pill buttons */
+.rounded-full {
+    border-radius: var(--br-max);
+}
+
+.rounded-circle {
+    border-radius: var(--br-50);
+}
+
+.rounded-xs {
+    border-radius: var(--br-xs);
+}
+
+.rounded-sm {
+    border-radius: var(--br-sm);
+}
+
+.rounded-md {
+    border-radius: var(--br-md);
+}
+
+.rounded-lg {
+    border-radius: var(--br-lg);
+}
+
+.rounded-xl {
+    border-radius: var(--br-xl);
+}

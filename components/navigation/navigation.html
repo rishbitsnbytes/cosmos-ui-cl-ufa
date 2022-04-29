@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rishabh Rathore">
+    <link rel="stylesheet" href="./navigation.css">
+    <script src="https://kit.fontawesome.com/fa8f01e628.js" crossorigin="anonymous"></script>
+    <title>Navigation</title>
+</head>
+
+<body>
+
+    <nav class="nav-bar w-full h-fit font-bold px-3 py-0-5 rounded-md flex-row flex-justify-between flex-align-center">
+        <div class="flex-row flex-justify-between flex-align-center flex-gap-1">
+            <div class="flex-row flex-justify-center flex-align-center flex-gap-2">
+                <!-- Brand Logo -->
+                <img class="nav-logo rounded-circle" src="/Assets/cosmosIcon.png" alt="Logo" width="60" height="60">
+                <!-- Brand Title -->
+                <h1 class="nav-logo-title h1 font-xbold">My Store</h1>
+            </div>
+        </div>
+
+        <!-- search bar -->
+        <div class="flex-row flex-justify-between flex-align-center flex-gap-1">
+            <form class="search-bar flex-row flex-justify-between flex-align-center flex-gap-1 px-1 py-0-5 rounded-md w-40">
+                <button class="btn btn-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input class="search-bar-input text-sm" type="search" placeholder="Type to search">
+            </form>
+        </div>
+
+        <!-- Icons and Buttons -->
+        <div class="nav-actions-container flex-row flex-justify-between flex-align-center flex-gap-2">
+            <a href="#" class="btn relative mx-0-5 my-1 w-max h-max">
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                <span
+                    class="badge-notification-count absolute w-2 h-2 p-0-5 rounded-full font-bold flex-row flex-justify-center flex-align-center text-sm">5
+                </span>
+            </a>       
+            <a href="#" class="btn relative mx-0-5 my-1 w-max h-max">
+                <i class="fa-regular fa-heart fa-xl"></i>
+                <span
+                    class="badge-notification-count absolute w-2 h-2 p-0-5 rounded-full font-bold flex-row flex-justify-center flex-align-center text-sm">8
+                </span>
+            </a>
+            <a href="#" class="btn relative mx-0-5 my-1 w-max h-max">
+                <i class="fa-solid fa-user fa-xl"></i>
+            </a>
+            <a href="#" class="btn btn-logout px-1 py-0-5 rounded-md">Logout</a>
+        </div>
+    </nav>
+
+</body>
+
+</html>
