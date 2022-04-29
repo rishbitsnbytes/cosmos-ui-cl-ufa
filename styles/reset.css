@@ -42,7 +42,7 @@ button, a {
 
 .icon,
 i {
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .active {
