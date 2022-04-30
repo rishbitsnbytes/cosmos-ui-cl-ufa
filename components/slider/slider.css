@@ -1,0 +1,53 @@
+@import url(../../styles/all-imports.css);
+
+label.slider-track[for=range] {
+    overflow: hidden;
+}
+
+label.slider-track[for=range]:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -15px;
+    height: 3rem;
+    width: Calc(100% - 7.5px);
+    background-color: var(--color-slider-blank-bg);
+}
+
+input.slider[type=range] {
+    -webkit-appearance: none;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+    outline: none;
+}
+
+input.slider[type=range]:focus{
+  outline:none;
+}
+
+input.slider[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: var(--color-secondary);
+    cursor:pointer;
+    width: 1.5rem;
+    height: 0.5rem;
+    /* border-radius: 50%; */
+    box-shadow: 1px 2px 10px 1px var(--color-slider-blank-bg),
+                -15px 0 0 7.5px var(--color-primary),
+                -30px 0 0 7.5px var(--color-primary),
+                -45px 0 0 7.5px var(--color-primary),
+                -60px 0 0 7.5px var(--color-primary),
+                -75px 0 0 7.5px var(--color-primary),
+                -90px 0 0 7.5px var(--color-primary),
+                -105px 0 0 7.5px var(--color-primary),
+                -120px 0 0 7.5px var(--color-primary),
+                -135px 0 0 7.5px var(--color-primary),
+                -150px 0 0 7.5px var(--color-primary),
+                -165px 0 0 7.5px var(--color-primary),
+                -180px 0 0 7.5px var(--color-primary),
+                -200px 0 0 7.5px var(--color-primary);
+     z-index: 2;
+}
+
+ 
