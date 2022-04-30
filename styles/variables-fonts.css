@@ -52,6 +52,7 @@
     --color-rating-star-blank: rgba(0, 0, 0, 0.25);
     --color-rating-star-hover: #ffd675;
     --color-rating-star-checked: #ffb400;
+    --color-slider-blank-bg: rgba(90, 90, 90, 0.2);
 
     /* Input Form colors */
     --color-form-element-border: var(--black);
