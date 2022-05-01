@@ -228,6 +228,8 @@ h6,
     position: static;
 }
 
+/* Color Utility Classes */
+
 .color-primary {
     color: var(--color-primary);
 }
@@ -238,4 +240,10 @@ h6,
 
 .color-tertiary {
     color: var(--color-tertiary);
+}
+
+/* Others */
+
+.pointer {
+    cursor: pointer;
 }
