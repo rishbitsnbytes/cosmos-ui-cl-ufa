@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <meta name="name" content="Rishabh Rathore">
+    <meta name="description" content="Component Library Home Page Website">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/fa8f01e628.js" crossorigin="anonymous"></script>
+    <title>Cosmos-UI Home Page</title>
 </head>
+
 <body>
-    
+    <div class="bg-img">
+        <div class="bg-img-blur w-full h-full">
+
+            <!-- Nav Bar -->
+
+            <nav class="nav-bar w-full h-fit font-bold px-3 py-0-75 rounded-md flex-row flex-justify-between flex-align-center">
+                <div class="flex-row flex-justify-between flex-align-center flex-gap-1">
+                    <div class="flex-row flex-justify-center flex-align-center flex-gap-2">
+                        <!-- Brand Logo -->
+                        <img class="nav-logo rounded-circle" src="/Assets/cosmosIcon.png" alt="Logo" width="60" height="60">
+                        <!-- Brand Title -->
+                        <h1 class="nav-logo-title h1 font-xbold">My Store</h1>
+                    </div>
+                </div>
+        
+                <!-- Icons and Buttons -->
+
+                <div class="nav-actions-container flex-row flex-justify-between flex-align-center flex-gap-2">
+                    <a class="link-active btn btn-link-animated-1 mx-1 my-0-5 p-0-5 text-lg" href="./index.html">Home</a>
+                    <a class="btn btn-link-animated-1 mx-1 my-0-5 p-0-5 text-lg" href="./docs/docs.html">Docs</a>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+
+            <header class="grid-50-50-layout grid grid-cols-2 grid-rows-1 grid-align-center grid-justify-center gap-3 mx-8 my-3 px-5 py-8">
+                <div class="header-text flex-col flex-justify-center flex-align-start gap-3">
+                    <p class="h1 font-bold">Cosmos of Components for your next awesome project!</p>
+                    <p class="h4">Fast | Responsive | Everything you need | Utility-First</p>
+                    <div>
+                        <a href="#installation-section" class="btn btn-secondary m-2 px-3 py-0-75 rounded-sm">Installation</a>
+                        <a href="./docs/docs.html" class="btn btn-primary m-2 px-3 py-0-75 rounded-sm">Documentation</a>
+                    </div>
+                </div>
+                <div>
+                    <img class="h-full w-full" src="/Assets/component-lib-home-hero.svg">
+                </div>
+            </header>
+
+            <!-- Main (Installation) Section -->
+
+            <main id="installation-section" class="grid-50-50-layout grid grid-cols-2 grid-rows-1 grid-align-center grid-justify-center gap-3 mx-8 my-3 px-5 py-8">
+                <div class="header-text flex-col flex-justify-center flex-align-start gap-3">
+                    <p class="h1 font-bold">Installation</p>
+                    <p class="h4">Copy this style link tag into your html head tag or use @import in your css style file at the top and leverage the convenience of <span class="font-xbold text-lg">Cosmos-UI</span> </p>
+                    <div>
+                        <a href="./docs/docs.html" class="btn btn-primary m-2 px-3 py-0-75 rounded-sm">Documentation</a>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520HTML%2520Link%2520Tag%2520--%253E%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcosmos-ui-cl-ufa.vercel.app%252Fstyles%252Fcosmos-ui.css%2522%252F%253E%250A%250AOR%250A%250A%252F*%2520CSS%2520Import%2520*%252F%250A%2540import%2520url%28https%253A%252F%252Fcosmos-ui-cl-ufa.vercel.app%252Fstyles%252Fcosmos-ui.css%29%253B"
+                    style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </div>
+            </main>
+
+            <!-- Footer -->
+
+            <footer class="p-2 w-full h-fit flex-col flex-justify-center flex-align-center gap-1">
+                <p class="h3 w-fit">
+                    Made with<span><i class="fa-solid fa-heart color-tertiary mx-1"></i></span>by<span><a class="btn btn-link-animated-1 mx-1 font-xbold" href="https://rishbitsnbytes.netlify.app/"> <span class="color-tertiary">Rishabh</span></a>
+                </p>
+               <div>
+                    <a class="mx-2" href="https://github.com/rishbitsnbytes">
+                        <span class="text-xxl font-bold"><i class="fa-brands fa-github btn btn-icon"></i>
+                        </span>
+                    </a>
+                    <a class="mx-2" href="https://twitter.com/rishbitsnbytes">
+                        <span class="text-xxl font-bold"><i class="fa-brands fa-twitter btn btn-icon"></i>
+                        </span>
+                    </a>
+                    <a class="mx-2" href="https://www.linkedin.com/in/rishrathore/">
+                        <span class="text-xxl font-bold"><i class="fa-brands fa-linkedin btn btn-icon"></i>
+                        </span>
+                    </a>
+               </div> 
+               <p>
+                    <span><i class="fa-regular fa-copyright"></i>
+                    </span>2022 - rishbitsnbytes
+               </p> 
+
+            </footer>
+        </div>
+    </div>
 </body>
+
 </html>

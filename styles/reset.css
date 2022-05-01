@@ -45,16 +45,10 @@ i {
     /* pointer-events: none; */
 }
 
-.active {
-    border-bottom: 2px solid var(--color-tertiary);
-    font-weight: var(--weight-xbold);
-}
-
 ol,
 ul {
     list-style: none;
 }
-
 
 /* font utilities */
 p,
@@ -232,4 +226,16 @@ h6,
 
 .static {
     position: static;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-tertiary {
+    color: var(--color-tertiary);
 }
