@@ -6,6 +6,7 @@
 @import url(./utils/space-utils/height.css);
 @import url(./utils/space-utils/width.css);
 @import url(../styles/utils/layout-utils.css);
+@import url(../styles.css);
 
 /* Components */
 @import url(../components/alerts/alerts.css);
