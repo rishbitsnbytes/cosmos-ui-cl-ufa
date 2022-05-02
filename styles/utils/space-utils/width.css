@@ -1,0 +1,880 @@
+@import url(../../all-imports.css);
+
+
+.w-auto {
+    width: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-max {
+    width: max-content;
+}
+
+.w-min {
+    width: min-content;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.w-px {
+    width: 1px;
+}
+
+.w-0-25 {
+    width: 0.25rem;
+}
+
+.w-0-5 {
+    width: 0.50rem;
+}
+
+.w-0-75 {
+    width: 0.75rem;
+}
+
+.w-1 {
+    width: 1rem;
+}
+
+.w-1-25 {
+    width: 1.25rem;
+}
+
+.w-1-5 {
+    width: 1.50rem;
+}
+
+.w-1-75 {
+    width: 1.75rem;
+}
+
+.w-2 {
+    width: 2rem;
+}
+
+.w-2-25 {
+    width: 2.25rem;
+}
+
+.w-2-5 {
+    width: 2.50rem;
+}
+
+.w-2-75 {
+    width: 2.75rem;
+}
+
+.w-3 {
+    width: 3rem;
+}
+
+.w-3-25 {
+    width: 3.25rem;
+}
+
+.w-3-5 {
+    width: 3.50rem;
+}
+
+.w-3-75 {
+    width: 3.75rem;
+}
+
+.w-4 {
+    width: 4rem;
+}
+
+.w-4-25 {
+    width: 4.25rem;
+}
+
+.w-4-5 {
+    width: 4.50rem;
+}
+
+.w-4-75 {
+    width: 4.75rem;
+}
+
+.w-5 {
+    width: 5rem;
+}
+
+.w-5-25 {
+    width: 5.25rem;
+}
+
+.w-5-5 {
+    width: 5.50rem;
+}
+
+.w-5-75 {
+    width: 5.75rem;
+}
+
+.w-6 {
+    width: 6rem;
+}
+
+.w-6-25 {
+    width: 6.25rem;
+}
+
+.w-6-5 {
+    width: 6.50rem;
+}
+
+.w-6-75 {
+    width: 6.75rem;
+}
+
+.w-7 {
+    width: 7rem;
+}
+
+.w-7-25 {
+    width: 7.25rem;
+}
+
+.w-7-5 {
+    width: 7.50rem;
+}
+
+.w-7-75 {
+    width: 7.75rem;
+}
+
+.w-8 {
+    width: 1rem;
+}
+
+.w-8-25 {
+    width: 8.25rem;
+}
+
+.w-8-5 {
+    width: 8.50rem;
+}
+
+.w-8-75 {
+    width: 8.75rem;
+}
+
+.w-9 {
+    width: 9rem;
+}
+
+.w-9-25 {
+    width: 9.25rem;
+}
+
+.w-9-5 {
+    width: 9.50rem;
+}
+
+.w-9-75 {
+    width: 9.75rem;
+}
+
+.w-10 {
+    width: 10rem;
+}
+
+.w-10-25 {
+    width: 10.25rem;
+}
+
+.w-10-5 {
+    width: 10.50rem;
+}
+
+.w-10-75 {
+    width: 10.75rem;
+}
+
+.w-11 {
+    width: 11rem;
+}
+
+.w-11-25 {
+    width: 11.25rem;
+}
+
+.w-11-5 {
+    width: 11.50rem;
+}
+
+.w-11-75 {
+    width: 11.75rem;
+}
+
+.w-12 {
+    width: 12rem;
+}
+
+.w-12-25 {
+    width: 12.25rem;
+}
+
+.w-12-5 {
+    width: 12.50rem;
+}
+
+.w-12-75 {
+    width: 12.75rem;
+}
+
+.w-13 {
+    width: 13rem;
+}
+
+.w-13-25 {
+    width: 13.25rem;
+}
+
+.w-13-5 {
+    width: 13.50rem;
+}
+
+.w-13-75 {
+    width: 13.75rem;
+}
+
+.w-14 {
+    width: 14rem;
+}
+
+.w-14-25 {
+    width: 14.25rem;
+}
+
+.w-14-5 {
+    width: 14.50rem;
+}
+
+.w-14-75 {
+    width: 14.75rem;
+}
+
+.w-15 {
+    width: 15rem;
+}
+
+.w-15-25 {
+    width: 15.25rem;
+}
+
+.w-15-5 {
+    width: 15.50rem;
+}
+
+.w-15-75 {
+    width: 15.75rem;
+}
+
+.w-16 {
+    width: 16rem;
+}
+
+.w-16-25 {
+    width: 16.25rem;
+}
+
+.w-16-5 {
+    width: 16.50rem;
+}
+
+.w-16-75 {
+    width: 16.75rem;
+}
+
+.w-17 {
+    width: 17rem;
+}
+
+.w-17-25 {
+    width: 17.25rem;
+}
+
+.w-17-5 {
+    width: 17.50rem;
+}
+
+.w-17-75 {
+    width: 17.75rem;
+}
+
+.w-18 {
+    width: 18rem;
+}
+
+.w-18-25 {
+    width: 18.25rem;
+}
+
+.w-18-5 {
+    width: 18.50rem;
+}
+
+.w-18-75 {
+    width: 18.75rem;
+}
+
+.w-19 {
+    width: 19rem;
+}
+
+.w-19-25 {
+    width: 19.25rem;
+}
+
+.w-19-5 {
+    width: 19.50rem;
+}
+
+.w-19-75 {
+    width: 19.75rem;
+}
+
+.w-20 {
+    width: 20rem;
+}
+
+.w-20-25 {
+    width: 20.25rem;
+}
+
+.w-20-5 {
+    width: 20.50rem;
+}
+
+.w-20-75 {
+    width: 20.75rem;
+}
+
+.w-21 {
+    width: 21rem;
+}
+
+.w-21-25 {
+    width: 21.25rem;
+}
+
+.w-21-5 {
+    width: 21.50rem;
+}
+
+.w-21-75 {
+    width: 21.75rem;
+}
+
+.w-22 {
+    width: 22rem;
+}
+
+.w-22-25 {
+    width: 22.25rem;
+}
+
+.w-22-5 {
+    width: 22.50rem;
+}
+
+.w-22-75 {
+    width: 22.75rem;
+}
+
+.w-23 {
+    width: 23rem;
+}
+
+.w-23-25 {
+    width: 23.25rem;
+}
+
+.w-23-5 {
+    width: 23.50rem;
+}
+
+.w-23-75 {
+    width: 23.75rem;
+}
+
+.w-24 {
+    width: 24rem;
+}
+
+.w-24-25 {
+    width: 24.25rem;
+}
+
+.w-24-5 {
+    width: 24.50rem;
+}
+
+.w-24-75 {
+    width: 24.75rem;
+}
+
+.w-25 {
+    width: 25rem;
+}
+
+.w-25-25 {
+    width: 25.25rem;
+}
+
+.w-25-5 {
+    width: 25.50rem;
+}
+
+.w-25-75 {
+    width: 25.75rem;
+}
+
+.w-26 {
+    width: 26rem;
+}
+
+.w-26-25 {
+    width: 26.25rem;
+}
+
+.w-26-5 {
+    width: 26.50rem;
+}
+
+.w-26-75 {
+    width: 26.75rem;
+}
+
+.w-27 {
+    width: 27rem;
+}
+
+.w-27-25 {
+    width: 27.25rem;
+}
+
+.w-27-5 {
+    width: 27.50rem;
+}
+
+.w-27-75 {
+    width: 27.75rem;
+}
+
+.w-28 {
+    width: 28rem;
+}
+
+.w-28-25 {
+    width: 28.25rem;
+}
+
+.w-28-5 {
+    width: 28.50rem;
+}
+
+.w-28-75 {
+    width: 28.75rem;
+}
+
+.w-29 {
+    width: 29rem;
+}
+
+.w-29-25 {
+    width: 29.25rem;
+}
+
+.w-29-5 {
+    width: 29.50rem;
+}
+
+.w-29-75 {
+    width: 29.75rem;
+}
+
+.w-30 {
+    width: 24rem;
+}
+
+.w-30-25 {
+    width: 30.25rem;
+}
+
+.w-30-5 {
+    width: 30.50rem;
+}
+
+.w-30-75 {
+    width: 30.75rem;
+}
+
+.w-31 {
+    width: 31rem;
+}
+
+.w-31-25 {
+    width: 31.25rem;
+}
+
+.w-31-5 {
+    width: 31.50rem;
+}
+
+.w-31-75 {
+    width: 31.75rem;
+}
+
+.w-32 {
+    width: 32rem;
+}
+
+.w-32-25 {
+    width: 32.25rem;
+}
+
+.w-32-5 {
+    width: 32.50rem;
+}
+
+.w-32-75 {
+    width: 32.75rem;
+}
+
+.w-33 {
+    width: 33rem;
+}
+
+.w-33-25 {
+    width: 33.25rem;
+}
+
+.w-33-5 {
+    width: 33.50rem;
+}
+
+.w-33-75 {
+    width: 33.75rem;
+}
+
+.w-34 {
+    width: 24rem;
+}
+
+.w-34-25 {
+    width: 34.25rem;
+}
+
+.w-34-5 {
+    width: 34.50rem;
+}
+
+.w-34-75 {
+    width: 34.75rem;
+}
+
+.w-35 {
+    width: 35rem;
+}
+
+.w-35-25 {
+    width: 35.25rem;
+}
+
+.w-35-5 {
+    width: 35.50rem;
+}
+
+.w-35-75 {
+    width: 35.75rem;
+}
+
+.w-36 {
+    width: 36rem;
+}
+
+.w-36-25 {
+    width: 36.25rem;
+}
+
+.w-36-5 {
+    width: 36.50rem;
+}
+
+.w-36-75 {
+    width: 36.75rem;
+}
+
+.w-37 {
+    width: 37rem;
+}
+
+.w-37-25 {
+    width: 37.25rem;
+}
+
+.w-37-5 {
+    width: 37.50rem;
+}
+
+.w-37-75 {
+    width: 37.75rem;
+}
+
+.w-38 {
+    width: 38rem;
+}
+
+.w-38-25 {
+    width: 38.25rem;
+}
+
+.w-38-5 {
+    width: 38.50rem;
+}
+
+.w-38-75 {
+    width: 38.75rem;
+}
+
+.w-39 {
+    width: 39rem;
+}
+
+.w-39-25 {
+    width: 39.25rem;
+}
+
+.w-39-5 {
+    width: 39.50rem;
+}
+
+.w-39-75 {
+    width: 39.75rem;
+}
+
+.w-40 {
+    width: 40rem;
+}
+
+.w-40-25 {
+    width: 40.25rem;
+}
+
+.w-40-5 {
+    width: 40.50rem;
+}
+
+.w-40-75 {
+    width: 40.75rem;
+}
+
+.w-41 {
+    width: 24rem;
+}
+
+.w-41-25 {
+    width: 41.25rem;
+}
+
+.w-41-5 {
+    width: 41.50rem;
+}
+
+.w-41-75 {
+    width: 41.75rem;
+}
+
+.w-42 {
+    width: 42rem;
+}
+
+.w-42-25 {
+    width: 42.25rem;
+}
+
+.w-42-5 {
+    width: 42.50rem;
+}
+
+.w-42-75 {
+    width: 42.75rem;
+}
+
+.w-43 {
+    width: 24rem;
+}
+
+.w-43-25 {
+    width: 43.25rem;
+}
+
+.w-43-5 {
+    width: 43.50rem;
+}
+
+.w-43-75 {
+    width: 43.75rem;
+}
+
+.w-44 {
+    width: 44rem;
+}
+
+.w-44-25 {
+    width: 44.25rem;
+}
+
+.w-44-5 {
+    width: 44.50rem;
+}
+
+.w-44-75 {
+    width: 44.75rem;
+}
+
+.w-45 {
+    width: 45rem;
+}
+
+.w-45-25 {
+    width: 45.25rem;
+}
+
+.w-45-5 {
+    width: 45.50rem;
+}
+
+.w-45-75 {
+    width: 45.75rem;
+}
+
+.w-46 {
+    width: 46rem;
+}
+
+.w-46-25 {
+    width: 46.25rem;
+}
+
+.w-46-5 {
+    width: 46.50rem;
+}
+
+.w-46-75 {
+    width: 46.75rem;
+}
+
+.w-47 {
+    width: 47rem;
+}
+
+.w-47-25 {
+    width: 47.25rem;
+}
+
+.w-47-5 {
+    width: 47.50rem;
+}
+
+.w-47-75 {
+    width: 47.75rem;
+}
+
+.w-48 {
+    width: 48rem;
+}
+
+.w-48-25 {
+    width: 48.25rem;
+}
+
+.w-48-5 {
+    width: 48.50rem;
+}
+
+.w-48-75 {
+    width: 48.75rem;
+}
+
+.w-49 {
+    width: 49rem;
+}
+
+.w-49-25 {
+    width: 49.25rem;
+}
+
+.w-49-5 {
+    width: 49.50rem;
+}
+
+.w-49-75 {
+    width: 49.75rem;
+}
+
+.w-50 {
+    width: 50rem;
+}
+
+/* Percentage Value */
+
+.w-10-pc {
+    width: 10%;
+}
+
+.w-20-pc {
+    width: 20%;
+}
+
+.w-30-pc {
+    width: 30%;
+}
+
+.w-40-pc {
+    width: 40%;
+}
+
+.w-50-pc {
+    width: 50%;
+}
+
+.w-60-pc {
+    width: 60%;
+}
+
+.w-70-pc {
+    width: 70%;
+}
+
+.w-80-pc {
+    width: 80%;
+}
+
+.w-90-pc {
+    width: 90%;
+}
+
+.w-100-pc {
+    width: 100%;
+}
+
+.w-150-pc {
+    width: 150%;
+}
+
+.w-200-pc {
+    width: 200%;
+}
