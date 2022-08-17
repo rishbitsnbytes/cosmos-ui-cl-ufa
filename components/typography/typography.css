@@ -1,0 +1,26 @@
+@import url(../../styles/all-imports.css);
+
+/* <!-- Text Positions --> */
+
+
+/* <!-- Colored Text --> */
+
+.text-color-primary {
+    color: var(--color-primary);
+}
+
+.text-color-secondary {
+    color: var(--color-secondary);
+}
+
+.text-color-success {
+    color: var(--color-alert-success-text);
+}
+
+.text-color-warning {
+    color: var(--color-alert-warning-text);
+}
+
+.text-color-error {
+    color: var(--color-alert-error-text);
+}
