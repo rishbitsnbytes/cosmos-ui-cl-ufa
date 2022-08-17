@@ -127,3 +127,8 @@
     opacity: 0;
 }
 
+.link-active {
+    border-bottom: 1px solid var(--color-tertiary);
+    font-weight: var(--weight-xbold);
+}
+

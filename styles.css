@@ -1,0 +1,27 @@
+@import url(./styles/all-imports.css);
+
+.bg-img {
+    background-image: url(/assets/cosmos4.jpg);
+    background-size: cover;
+}
+
+.nav-bar {
+    box-shadow: 0px 6px 10px 1px var(--color-tertiary);
+}
+
+.bg-img-blur {
+    background-color: var(--color-bg-img-blur);
+}
+
+.nav-logo-title {
+    color: var(--color-tertiary);
+}
+
+.header-text {
+    color: var(--color-secondary);
+}
+
+footer {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}

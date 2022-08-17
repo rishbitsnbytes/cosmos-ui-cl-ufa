@@ -45,16 +45,10 @@ i {
     /* pointer-events: none; */
 }
 
-.active {
-    border-bottom: 2px solid var(--color-tertiary);
-    font-weight: var(--weight-xbold);
-}
-
 ol,
 ul {
     list-style: none;
 }
-
 
 /* font utilities */
 p,
@@ -142,7 +136,7 @@ h6,
     font-weight: var(--weight-bold);
 }
 
-.xbold {
+.font-xbold {
     font-weight: var(--weight-xbold);
 }
 
@@ -232,4 +226,32 @@ h6,
 
 .static {
     position: static;
+}
+
+/* Color Utility Classes */
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-tertiary {
+    color: var(--color-tertiary);
+}
+
+.color-quarternary {
+    color: var(--color-quarternary);
+}
+
+.color-faded {
+    color: var(--gray-7);
+}
+
+/* Others */
+
+.pointer {
+    cursor: pointer;
 }

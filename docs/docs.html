@@ -1,12 +1,1431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation</title>
+    <meta name="name" content="Rishabh Rathore">
+    <meta name="description" content="Component Library Documentation Website">
+    <link rel="stylesheet" href="./docs.css">
+    <script src="https://kit.fontawesome.com/fa8f01e628.js" crossorigin="anonymous"></script>
+    <title>Cosmos-UI Docs Page</title>
 </head>
+
 <body>
-    
+    <div class="grid-container-page-layout">
+
+        <!-- Nav Bar -->
+
+        <nav
+            class="nav-bar w-full h-fit font-bold px-3 py-0-75 rounded-md flex-row flex-justify-between flex-align-center">
+            <div class="flex-row flex-justify-between flex-align-center flex-gap-1">
+                <div class="flex-row flex-justify-center flex-align-center flex-gap-2">
+                    <!-- Brand Logo -->
+                    <a href="../index.html">
+                        <img class="nav-logo rounded-circle" src="/Assets/cosmosIcon.png" alt="Logo" width="60"
+                            height="60">
+                    </a>
+                    <!-- Brand Title -->
+                    <h1 class="nav-logo-title h1 font-xbold">
+                        <a href="../index.html">Cosmos-UI</a>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Icons and Buttons -->
+
+            <div class="nav-actions-container flex-row flex-justify-between flex-align-center flex-gap-2">
+                <a class="btn btn-link-animated-1 mx-1 my-0-5 p-0-5 text-lg" href="../index.html">Home</a>
+                <a class="link-active btn btn-link-animated-1 mx-1 my-0-5 p-0-5 text-lg" href="./docs.html">Docs</a>
+            </div>
+        </nav>
+
+        <!-- Sidebar Navigation and Links -->
+
+        <div class="sidebar" id="sidebar">
+            <h2 class="m-1 p-1">Components</h2>
+            <ul class="sidebar-links">
+                <li class="sidebar-link-item"><a href="#Alerts">Alerts</a></li>
+                <li class="sidebar-link-item"><a href="#Avatar">Avatar</a></li>
+                <li class="sidebar-link-item"><a href="#Badge">Badge</a></li>
+                <li class="sidebar-link-item"><a href="#Button">Button</a></li>
+                <li class="sidebar-link-item"><a href="#Cards">Cards</a></li>
+                <li class="sidebar-link-item"><a href="#Image">Image</a></li>
+                <li class="sidebar-link-item"><a href="#Input">Input</a></li>
+                <li class="sidebar-link-item"><a href="#Lists">Lists</a></li>
+                <li class="sidebar-link-item"><a href="#Typography">Typography</a></li>
+                <li class="sidebar-link-item"><a href="#Navigation">Navigation</a></li>
+                <li class="sidebar-link-item"><a href="#Toast">Toast</a></li>
+                <li class="sidebar-link-item"><a href="#Rating">Rating</a></li>
+                <li class="sidebar-link-item"><a href="#Modal">Modal</a></li>
+                <li class="sidebar-link-item"><a href="#Slider">Slider</a></li>
+                <li class="sidebar-link-item"><a href="#Grid">Grid Simplified</a></li>
+            </ul>
+        </div>
+
+        <section class="main-section">
+
+            <div id="Alerts">
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Alerts</h2>
+                    <p class="component-desc-para">Alerts are used to attract user's attention for important information
+                        without interrupting the user's flow.</p>
+                </div>
+                <h3>Example of Alert Bar without close button</h3>
+                <p class="component-desc-para">Alerts are available in 5 types- success alert, error alert, warning
+                    alert, primary alert, secondary
+                    alert.<br> To use this alert just use class name <span class="color-primary font-sbold">alert</span>
+                    and also add class according to alert type- <span class="color-primary font-sbold">alert-primary,
+                        alert-secondary, alert-danger, alert-success, alert-warning</span>. (e.g.<span
+                        class="color-primary font-sbold">class="alert alert-primary"</span>).<br>You can copy html part
+                    from below code snippet.</p>
+
+                <div class="component-display-container flex-col gap-2">
+                    <div class="alert alert-primary m-1 px-1 py-0-5 rounded-md">
+                        This is an example of primary alert with button link!!
+                        <a href="#" class="btn-alert-primary ml-0-5">Check it out!</a>
+                    </div>
+
+                    <div class="alert alert-secondary m-1 px-1 py-0-5 rounded-md">
+                        This is an example of secondary alert!!
+                    </div>
+
+                    <div class="alert alert-success m-1 px-1 py-0-5 rounded-md">
+                        <span>
+                            <i class="mx-0-5 fa-solid fa-circle-check"></i>
+                        </span>
+                        This is an example of success alert!!
+                    </div>
+
+                    <div class="alert alert-error m-1 px-1 py-0-5 rounded-md">
+                        <span>
+                            <i class="mx-0-5 fa-solid fa-bug"></i>
+                        </span>
+                        This is an example of error alert!!
+                    </div>
+
+                    <div class="alert alert-warning m-1 px-1 py-0-5 rounded-md">
+                        <span>
+                            <i class="mx-0-5 fa-solid fa-triangle-exclamation"></i>
+                        </span>
+                        This is an example of warning alert!!
+                    </div>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522alert%2520alert-primary%2520m-1%2520px-1%2520py-0-5%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520example%2520of%2520primary%2520alert%2520with%2520button%2520link%21%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn-alert-primary%2520ml-0-5%2522%253ECheck%2520it%2520out%21%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2520m-1%2520px-1%2520py-0-5%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520example%2520of%2520secondary%2520alert%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2520m-1%2520px-1%2520py-0-5%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522mx-0-5%2520fa-solid%2520fa-circle-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520example%2520of%2520success%2520alert%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2520m-1%2520px-1%2520py-0-5%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522mx-0-5%2520fa-solid%2520fa-bug%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520example%2520of%2520error%2520alert%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2520m-1%2520px-1%2520py-0-5%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522mx-0-5%2520fa-solid%2520fa-triangle-exclamation%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520example%2520of%2520warning%2520alert%21%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Avatar">
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Avatar</h2>
+                    <p class="component-desc-para">Avatar can be used to show user's profile picture on profile
+                        information page, on navigation bar, in blogs grid items.</p>
+                </div>
+                <h3>Example of Image Avatar</h3>
+                <p class="component-desc-para">Avatar is available in 5 different sizes. You can use image in Avatar.
+                    You need to include class
+                    <span class="color-primary font-sbold">avatar</span> and for size add class according to size <span
+                        class="color-primary font-sbold">avatar-xl-size avatar-lg-size, avatar-md-size, avatar-sm-size,
+                        avatar-xs-size</span>
+                    (e.g. <span class="color-primary font-sbold">class="avatar avatar-lg-size"</span>)<br>
+                    Don't forget to add <span class="color-primary font-sbold">img-round or img-sqaure</span> class
+                    names for img element as per your need.
+                </p>
+
+                <div class="component-display-container">
+                    <!--Round Image Avatars Below -->
+
+                    <img class="w-15 h-15 rounded-full" src="https://i.pravatar.cc/" alt="avatar">
+
+                    <img class="w-10 h-10 rounded-full" src="https://i.pravatar.cc/" alt="avatar">
+
+                    <img class="w-7 h-7 rounded-full" src="https://i.pravatar.cc/" alt="avatar">
+
+                    <img class="w-5 h-5 rounded-full" src="https://i.pravatar.cc/" alt="avatar">
+
+                    <img class="w-3 h-3 rounded-full" src="https://i.pravatar.cc/" alt="avatar">
+                </div>
+
+                <div class="component-display-container">
+                    <!--Sqaure Image Avatars Below -->
+
+                    <img class="w-15 h-15" src="https://i.pravatar.cc/?" alt="avatar">
+
+                    <img class="w-10 h-10" src="https://i.pravatar.cc/?" alt="avatar">
+
+                    <img class="w-7 h-7" src="https://i.pravatar.cc/?" alt="avatar">
+
+                    <img class="w-5 h-5" src="https://i.pravatar.cc/?" alt="avatar">
+
+                    <img class="w-3 h-3" src="https://i.pravatar.cc/?" alt="avatar">
+                </div>
+
+                <div class="component-display-container">
+                    <!-- Round Text Avatars Below -->
+                    <div class="avatar-text w-15 h-15 rounded-full text-xxxl flex-row flex-justify-center flex-align-center"
+                        role="img" alt="avatar">RR</div>
+
+                    <div class="avatar-text w-10 h-10 rounded-full text-xxl flex-row flex-justify-center flex-align-center"
+                        role="img" alt="avatar">RR</div>
+
+                    <div class="avatar-text w-7 h-7 rounded-full text-xl flex-row flex-justify-center flex-align-center"
+                        role="img" alt="avatar">RR</div>
+
+                    <div class="avatar-text w-5 h-5 rounded-full text-lg flex-row flex-justify-center flex-align-center"
+                        role="img" alt="avatar">RR</div>
+
+                    <div class="avatar-text w-3 h-3 rounded-full text-sm flex-row flex-justify-center flex-align-center"
+                        role="img" alt="avatar">RR</div>
+                </div>
+
+                <div class="component-display-container">
+                    <!--Sqaure Text Avatars Below -->
+                    <div class="avatar-text w-15 h-15 text-xxxl flex-row flex-justify-center flex-align-center"
+                        role="img" alt="avatar">RR</div>
+
+                    <div class="avatar-text w-10 h-10 text-xxl flex-row flex-justify-center flex-align-center"
+                        role="img" alt="avatar">RR</div>
+
+                    <div class="avatar-text w-7 h-7 text-xl flex-row flex-justify-center flex-align-center" role="img"
+                        alt="avatar">RR</div>
+
+                    <div class="avatar-text w-5 h-5 text-lg flex-row flex-justify-center flex-align-center" role="img"
+                        alt="avatar">RR</div>
+
+                    <div class="avatar-text w-3 h-3 text-sm flex-row flex-justify-center flex-align-center" role="img"
+                        alt="avatar">RR</div>
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253C%21--Round%2520Image%2520Avatars%2520Below%2520--%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-15%2520h-15%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-10%2520h-10%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-7%2520h-7%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-5%2520h-5%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-3%2520h-3%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--Sqaure%2520Image%2520Avatars%2520Below%2520--%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-15%2520h-15%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-10%2520h-10%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-7%2520h-7%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-5%2520h-5%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-3%2520h-3%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522avatar%2522%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--%2520Round%2520Text%2520Avatars%2520Below%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-15%2520h-15%2520rounded-full%2520text-xxxl%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-10%2520h-10%2520rounded-full%2520text-xxl%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-7%2520h-7%2520rounded-full%2520text-xl%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-5%2520h-5%2520rounded-full%2520text-lg%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-3%2520h-3%2520rounded-full%2520text-sm%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--Sqaure%2520Text%2520Avatars%2520Below%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-15%2520h-15%2520text-xxxl%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-10%2520h-10%2520text-xxl%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-7%2520h-7%2520text-xl%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-5%2520h-5%2520text-lg%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-text%2520w-3%2520h-3%2520text-sm%2520flex-row%2520flex-justify-center%2520flex-align-center%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERR%253C%252Fdiv%253E%250A"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Badge">
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Badges</h2>
+                    <p class="component-desc-para">Badges are being used to display a notification count or status
+                        information</p>
+                </div>
+
+                <h3>Example of Badges</h3>
+                <p class="component-desc-para">We have 3 types of status badges that can be integrated with Avatars. You
+                    can show colors to show the
+                    online status of user. And to show cart or notification count, you can use text badge. Check code
+                    below to copy the html part as is.</p>
+
+                <div class="component-display-container">
+
+                    <!-- Avatar Live Status Badges -->
+
+                    <div class="relative w-15 h-15">
+                        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+                        <span class="status absolute online w-3 h-3 rounded-full"></span>
+                    </div>
+
+                    <div class="relative w-10 h-10">
+                        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+                        <span class="status absolute offline w-2 h-2 rounded-full"></span>
+                    </div>
+
+                    <div class="relative w-5 h-5">
+                        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+                        <span class="status absolute idle w-1 h-1 rounded-full"></span>
+                    </div>
+
+                    <div class="relative w-3 h-3">
+                        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+                        <span class="status absolute online w-0-75 h-0-75 rounded-full"></span>
+                    </div>
+                </div>
+
+                <div class="component-display-container">
+
+                    <!-- Icon Notification Badges -->
+
+                    <div class="relative mx-0-5 my-1 w-max h-max">
+                        <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                        <span
+                            class="badge-notification-count absolute w-2 h-2 p-0-5 rounded-full font-bold flex-row flex-justify-center flex-align-center text-sm">5
+                        </span>
+                    </div>
+
+                    <div class="relative mx-0-5 my-1 w-max h-max">
+                        <i class="fa-regular fa-heart fa-xl"></i>
+                        <span
+                            class="badge-notification-count absolute w-2 h-2 p-0-5 rounded-full font-bold flex-row flex-justify-center flex-align-center text-sm">8
+                        </span>
+                    </div>
+                </div>
+
+                <div class="component-display-container flex-col gap-2">
+
+                    <!-- Heading Badges -->
+
+                    <h1 class="relative">This is example of h1 Heading with
+                        Badge <span class="absolute heading-badge-primary font-light text-md m-0-25 p-0-25 rounded-xs">
+                            New
+                        </span>
+                    </h1>
+
+                    <h2 class="relative">This is example of h2 Heading with
+                        Badge <span class="absolute heading-badge-primary font-light text-sm m-0-25 p-0-25 rounded-xs">
+                            Pending </span>
+                    </h2>
+
+                    <h3 class="relative">This is example of h3 Heading with Badge <span
+                            class="absolute heading-badge-primary font-light text-sm m-0-25 p-0-25 rounded-full"> New
+                        </span>
+                    </h3>
+
+                    <h4 class="relative">This is example of h4 Heading with Badge <span
+                            class="absolute heading-badge-secondary font-light text-xs m-0-25 p-0-25 rounded-xs"> New
+                        </span>
+                    </h4>
+
+                    <h5 class="relative">This is example of h5 Heading with Badge <span
+                            class="absolute heading-badge-secondary font-light text-xs m-0-25 p-0-25 rounded-xs">
+                            Pending </span>
+                    </h5>
+
+                    <h6 class="relative">This is example of h6 Heading with Badge <span
+                            class="absolute heading-badge-secondary font-light text-xs m-0-25 p-0-25 rounded-xs"> New
+                        </span>
+                    </h6>
+
+                </div>
+
+                <div class="component-display-container">
+                    <!-- Text Badges -->
+
+                    <span class="text-badge-primary m-0-25 px-0-75 py-0-25 rounded-xs text-md">Sale</span>
+
+                    <span class="text-badge-secondary m-0-25 px-0-75 py-0-25 rounded-full text-md">Sold</span>
+
+                    <span class="text-badge-highlight m-0-25 px-0-75 py-0-25 rounded-sm text-md">New</span>
+
+                    <span class="text-badge-secondary m-0-25 px-0-75 py-0-25 rounded-md text-md">Out of Stock</span>
+
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Avatar%2520Live%2520Status%2520Badges%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520w-15%2520h-15%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522Badge%2520Avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status%2520absolute%2520online%2520w-3%2520h-3%2520rounded-full%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520w-10%2520h-10%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522Badge%2520Avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status%2520absolute%2520offline%2520w-2%2520h-2%2520rounded-full%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520w-5%2520h-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522Badge%2520Avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status%2520absolute%2520idle%2520w-1%2520h-1%2520rounded-full%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520w-3%2520h-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2520rounded-full%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F%253F%2522%2520alt%253D%2522Badge%2520Avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status%2520absolute%2520online%2520w-0-75%2520h-0-75%2520rounded-full%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Icon%2520Notification%2520Badges%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-0-5%2520my-1%2520w-max%2520h-max%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2520fa-xl%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522badge-notification-count%2520absolute%2520w-2%2520h-2%2520p-0-5%2520rounded-full%2520font-bold%2520flex-row%2520flex-justify-center%2520flex-align-center%2520text-sm%2522%253E5%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-0-5%2520my-1%2520w-max%2520h-max%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2520fa-xl%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522badge-notification-count%2520absolute%2520w-2%2520h-2%2520p-0-5%2520rounded-full%2520font-bold%2520flex-row%2520flex-justify-center%2520flex-align-center%2520text-sm%2522%253E8%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Heading%2520Badges%2520--%253E%250A%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522relative%2522%253EThis%2520is%2520example%2520of%2520h1%2520Heading%2520with%250A%2520%2520%2520%2520%2520%2520%2520%2520Badge%2520%253Cspan%2520class%253D%2522absolute%2520heading-badge-primary%2520font-light%2520text-md%2520m-0-25%2520p-0-25%2520rounded-xs%2522%253E%2520New%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh1%253E%250A%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522relative%2522%253EThis%2520is%2520example%2520of%2520h2%2520Heading%2520with%250A%2520%2520%2520%2520%2520%2520%2520%2520Badge%2520%253Cspan%2520class%253D%2522absolute%2520heading-badge-primary%2520font-light%2520text-sm%2520m-0-25%2520p-0-25%2520rounded-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Pending%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh2%253E%250A%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522relative%2522%253EThis%2520is%2520example%2520of%2520h3%2520Heading%2520with%2520Badge%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522absolute%2520heading-badge-primary%2520font-light%2520text-sm%2520m-0-25%2520p-0-25%2520rounded-full%2522%253E%2520New%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh3%253E%250A%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522relative%2522%253EThis%2520is%2520example%2520of%2520h4%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522absolute%2520heading-badge-secondary%2520font-light%2520text-xs%2520m-0-25%2520p-0-25%2520rounded-xs%2522%253E%2520New%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh4%253E%250A%250A%2520%2520%2520%2520%253Ch5%2520class%253D%2522relative%2522%253EThis%2520is%2520example%2520of%2520h5%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522absolute%2520heading-badge-secondary%2520font-light%2520text-xs%2520m-0-25%2520p-0-25%2520rounded-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Pending%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh5%253E%250A%250A%2520%2520%2520%2520%253Ch6%2520class%253D%2522relative%2522%253EThis%2520is%2520example%2520of%2520h6%2520Heading%2520with%2520Badge%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522absolute%2520heading-badge-secondary%2520font-light%2520text-xs%2520m-0-25%2520p-0-25%2520rounded-xs%2522%253E%2520New%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh6%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Text%2520Badges%2520--%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-badge-primary%2520m-0-25%2520px-0-75%2520py-0-25%2520rounded-xs%2520text-md%2522%253ESale%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-badge-secondary%2520m-0-25%2520px-0-75%2520py-0-25%2520rounded-full%2520text-md%2522%253ESold%253C%252Fspan%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-badge-highlight%2520m-0-25%2520px-0-75%2520py-0-25%2520rounded-sm%2520text-md%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-badge-secondary%2520m-0-25%2520px-0-75%2520py-0-25%2520rounded-md%2520text-md%2522%253EOut%2520of%2520Stock%253C%252Fspan%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Button">
+
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Buttons</h2>
+                    <p class="component-desc-para">Buttons are also called as call to action. We have range of
+                        buttons and their states. You may use <em>a</em> tag or <em>button</em> element, you need to add
+                        respective classes, and you are good to go.</p>
+                </div>
+                <h2 class="h4">Example of Primary Button Styles</h2>
+                <p class="component-desc-para">Whenever you want your user to click on a link or button, use primary
+                    style buttons.</p>
+                <div class="component-display-container">
+                    <!-- Primary Button -->
+
+                    <button class="btn btn-primary mx-1 my-0-5 px-0-75 py-0-5 rounded-sm text-md">
+                        Primary Button
+                    </button>
+
+                    <!-- Secondary Button -->
+
+                    <button class="btn btn-secondary mx-1 my-0-5 px-0-75 py-0-5 rounded-sm text-md">
+                        Secondary Button
+                    </button>
+
+                    <!-- Link Button -->
+
+                    <a class="btn btn-link mx-1 my-0-5 px-0-75 py-0-5 rounded-sm text-md" href="#">Link Button</a>
+
+                    <!-- Icon Buttons -->
+
+                    <button class="btn btn-icon mx-1 my-0-5 px-0-75 py-0-5 rounded-sm text-md">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                    </button>
+
+                    <button class="btn btn-primary mx-1 my-0-5 px-0-75 py-0-5 rounded-sm text-md">
+                        <i class="icon-in-btn fa-solid fa-cart-plus text-md mr-0-5"></i>
+                        Add to Cart
+                    </button>
+
+                    <!-- Floating Action Button -->
+
+                    <button class="btn btn-fab mx-1 my-0-5 px-0-75 py-0-5 rounded-sm text-xl">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+
+                    <!-- Link Button with no underline-->
+
+                    <a class="btn btn-link-naked mx-1 my-1 p-0-5 text-md" href="#">Naked Link Button</a>
+
+                    <!-- Link Animated Button -->
+
+                    <a class="btn btn-link-animated-1 mx-1 my-0-5 p-0-5 text-md" href="#">Link Animation Button</a>
+
+                    <a class="btn btn-link-animated-2 mx-1 my-0-5 p-0-5 text-md" href="#">Link Animation Button 2</a>
+
+                    <a class="btn btn-link-animated-3 mx-1 my-0-5 p-0-5 text-md" href="#">Link Animation Button 3</a>
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Primary%2520Button%2520--%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520mx-1%2520my-0-5%2520px-0-75%2520py-0-5%2520rounded-sm%2520text-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Primary%2520Button%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Secondary%2520Button%2520--%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520mx-1%2520my-0-5%2520px-0-75%2520py-0-5%2520rounded-sm%2520text-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Secondary%2520Button%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Link%2520Button%2520--%253E%250A%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2520mx-1%2520my-0-5%2520px-0-75%2520py-0-5%2520rounded-sm%2520text-md%2522href%253D%2522%2523%2522%253ELink%2520Button%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Icon%2520Buttons%2520--%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520mx-1%2520my-0-5%2520px-0-75%2520py-0-5%2520rounded-sm%2520text-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2520text-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520mx-1%2520my-0-5%2520px-0-75%2520py-0-5%2520rounded-sm%2520text-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522icon-in-btn%2520fa-solid%2520fa-cart-plus%2520text-md%2520mr-0-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Floating%2520Action%2520Button%2520--%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-fab%2520mx-1%2520my-0-5%2520px-0-75%2520py-0-5%2520rounded-sm%2520text-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Link%2520Button%2520with%2520no%2520underline--%253E%250A%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link-naked%2520mx-1%2520my-1%2520p-0-5%2520text-md%2522%2520href%253D%2522%2523%2522%253ENaked%2520Link%2520Button%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Link%2520Animated%2520Button%2520--%253E%250A%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link-animated-1%2520mx-1%2520my-0-5%2520p-0-5%2520text-md%2522%2520href%253D%2522%2523%2522%253ELink%2520Animation%2520Button%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link-animated-2%2520mx-1%2520my-0-5%2520p-0-5%2520text-md%2522%2520href%253D%2522%2523%2522%253ELink%2520Animation%2520Button%25202%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link-animated-3%2520mx-1%2520my-0-5%2520p-0-5%2520text-md%2522%2520href%253D%2522%2523%2522%253ELink%2520Animation%2520Button%25203%253C%252Fa%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Cards">
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Cards</h2>
+                    <p class="component-desc-para">Card are used to show user related data collectively, like
+                        product details.</p>
+                </div>
+
+                <h3>Example of Different types of Cards</h3>
+                <p class="component-desc-para">Card's image may have a margin or it can be full-bleed. By default card's
+                    images are full-bleed. If
+                    you want image to have margin, you can use <span
+                        class="color-primary font-sbold">default-container</span>
+                    class.<br>Copy below code and put your desired text and image and you are good to go.</p>
+
+                <div class="component-display-container">
+                    <!-- Card Basic -->
+
+                    <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                        <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+                        <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                        <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                        <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                            heel.</p>
+                        <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                            <div>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                            </div>
+                            <div>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card with Badge -->
+
+                    <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                        <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+                        <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                        <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                        <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                            heel.</p>
+                        <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                            <div>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                            </div>
+                            <div>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <span
+                            class="card-badge text-badge-highlight m-0-25 px-0-75 py-0-25 rounded-md text-md w-fit absolute">New</span>
+                    </div>
+
+                    <!-- Card with Dismiss -->
+
+                    <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                        <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+                        <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                        <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                        <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                            heel.</p>
+                        <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                            <div>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                            </div>
+                            <div>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="card-dismiss-button card-button absolute text-lg"><i
+                                class="fa-regular fa-circle-xmark"></i></button>
+                    </div>
+
+                    <!-- Card with Text Overlay -->
+
+                    <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                        <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+                        <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                        <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                        <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                            heel.</p>
+                        <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                            <div>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                            </div>
+                            <div>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="card-text-overlay-container absolute flex-row flex-justify-center flex-align-center w-full h-full rounded-inherit">
+                            <p class="text-xl">Sold Out</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="component-display-container flex-col gap-2">
+
+                    <!-- Card with Text Only -->
+
+                    <div class="card-container relative flex-col flex-justify-start h-fit w-25 m-1 rounded-md">
+                        <div class="m-0-5">
+                            <p class=" mx-0-75 my-0-5 h3">Black Holes</p>
+                            <p class="card-subtitle mx-0-75 h6">Black Holes deep dive!</p>
+                            <p class="card-para mx-0-75 my-1-5 text-sm-2">Black Holes are really really black like for
+                                real.</p>
+                            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                                <div>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Read</button>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Bookmark</button>
+                                </div>
+                                <div>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="card-dismiss-button card-button absolute text-lg"><i
+                                    class="fa-regular fa-circle-xmark"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Card with Horizontal Layout -->
+
+                    <div class="card-container relative flex-col flex-justify-start h-fit w-40 m-1 rounded-md">
+                        <div class="flex-row flex-justify-start w-fit">
+                            <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-40-pc rounded-md">
+                            <div>
+                                <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                                <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                                <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with
+                                    pointed heel.</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                            <div>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                            </div>
+                            <div>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                                <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="card-dismiss-button card-button absolute text-lg"><i
+                                class="fa-regular fa-circle-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Card%2520Basic%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Badge%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2520text-badge-highlight%2520m-0-25%2520px-0-75%2520py-0-25%2520rounded-md%2520text-md%2520w-fit%2520absolute%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Dismiss%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss-button%2520card-button%2520absolute%2520text-lg%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-circle-xmark%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Text%2520Overlay%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-overlay-container%2520absolute%2520flex-row%2520flex-justify-center%2520flex-align-center%2520w-full%2520h-full%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-xl%2522%253ESold%2520Out%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Text%2520Only%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-25%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522m-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EBlack%2520Holes%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EBlack%2520Holes%2520deep%2520dive%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EBlack%2520Holes%2520are%2520really%2520really%2520black%2520like%2520for%2520real.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss-button%2520card-button%2520absolute%2520text-lg%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-circle-xmark%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Horizontal%2520Layout%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-40%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-start%2520w-fit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-40-pc%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss-button%2520card-button%2520absolute%2520text-lg%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-circle-xmark%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Image">
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Images</h2>
+                    <p class="component-desc-para">Images can be responsive to fit the parent's width, and also
+                        can be customised to be round shaped</p>
+                </div>
+                <h3>Example of Responsive Image</h3>
+                <p class="component-desc-para">You can add class <span
+                        class="color-primary font-sbold">img-responsive</span> to make your image fit the
+                    width of container. It's height will get adjusted by keeping the aspect ratio same. If you want to
+                    change the aspect ratio, you will have to crop the image.</p>
+
+                <div class="component-display-container flex-col gap-2">
+                    <!-- Image Responsive and Round -->
+
+                    <img class="w-full h-full" src="/Assets/cosmos8.jpg" alt="Image">
+
+                    <img class="w-15 h-15 rounded-circle" src="/Assets/cosmos8.jpg" alt="Image">
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Image%2520Responsive%2520and%2520Round%2520--%253E%250A%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2522%2520src%253D%2522%252FAssets%252Fcosmos8.jpg%2522%2520alt%253D%2522Image%2522%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-15%2520h-15%2520rounded-circle%2522%2520src%253D%2522%252FAssets%252Fcosmos8.jpg%2522%2520alt%253D%2522Image%2522%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+
+            <div id="Input">
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Inputs</h2>
+                    <p class="component-desc-para">Various Types of Input Elements are there.</p>
+                </div>
+                <h3>Example of Input Elements</h3>
+                <p class="component-desc-para">You can add class <span class="color-primary font-sbold">input,
+                        input-default </span> to use input elements of different types wherever it is required.</p>
+
+                <div class="component-display-container flex-col gap-2">
+                    <!-- Input default -->
+
+                    <div class="flex-col my-1 mx-0-5 w-20">
+                        <label for="name" class="font-bold mx-0-5 my-0-25">Name</label>
+                        <input type="text" id="name" class="input-default p-0-5 rounded-md p-0-5 rounded-md"
+                            placeholder="Charles Darwin">
+                    </div>
+
+
+                    <!-- Inputs with warning validation style -->
+
+                    <div class="flex-col my-1 mx-0-5 w-20">
+                        <label for="password" class="font-bold mx-0-5 my-0-25">Password</label>
+                        <input type="text" id="password" class="input-default p-0-5 rounded-md input-warning"
+                            placeholder="password">
+                        <span class="input-warning-msg text-sm font-sbold m-0-5">Weak Password</span>
+                    </div>
+
+
+                    <!-- Inputs with success validation style -->
+
+                    <div class="flex-col my-1 mx-0-5 w-20">
+                        <label for="password" class="font-bold mx-0-5 my-0-25">Password</label>
+                        <input type="text" id="password" class="input-default p-0-5 rounded-md input-success"
+                            placeholder="password">
+                        <span class="input-success-msg text-sm font-sbold m-0-5">Strong Password</span>
+                    </div>
+
+
+                    <!-- Inputs with error validation style -->
+
+                    <div class="flex-col my-1 mx-0-5 w-20">
+                        <label for="email" class="font-bold mx-0-5 my-0-25">E-mail</label>
+                        <input type="e-mail" id="email" class="input-default p-0-5 rounded-md input-error"
+                            placeholder="example@example.com">
+                        <span class="input-error-msg text-sm font-sbold m-0-5">Incorrect E-mail</span>
+                    </div>
+
+
+                    <!-- Input Textbox -->
+
+                    <div class="flex-col my-1 mx-0-5 w-40">
+                        <label for="input-textbox" class="font-bold mx-0-5 my-0-25">Comments
+                        </label>
+                        <textarea class="input-textbox w-full h-15 p-1 rounded-md" id="input-textbox"
+                            placeholder="write your thoughts..."></textarea>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Input%2520default%2520--%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520my-1%2520mx-0-5%2520w-20%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522name%2522%2520class%253D%2522font-bold%2520mx-0-5%2520my-0-25%2522%253EName%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520class%253D%2522input-default%2520p-0-5%2520rounded-md%2520p-0-5%2520rounded-md%2522%2520placeholder%253D%2522Charles%2520Darwin%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--%2520Inputs%2520with%2520warning%2520validation%2520style%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520my-1%2520mx-0-5%2520w-20%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522font-bold%2520mx-0-5%2520my-0-25%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522password%2522%2520class%253D%2522input-default%2520p-0-5%2520rounded-md%2520input-warning%2522%2520placeholder%253D%2522password%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-warning-msg%2520text-sm%2520font-sbold%2520m-0-5%2522%253EWeak%2520Password%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--%2520Inputs%2520with%2520success%2520validation%2520style%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520my-1%2520mx-0-5%2520w-20%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522font-bold%2520mx-0-5%2520my-0-25%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522password%2522%2520class%253D%2522input-default%2520p-0-5%2520rounded-md%2520input-success%2522%2520placeholder%253D%2522password%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-success-msg%2520text-sm%2520font-sbold%2520m-0-5%2522%253EStrong%2520Password%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--%2520Inputs%2520with%2520error%2520validation%2520style%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520my-1%2520mx-0-5%2520w-20%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522font-bold%2520mx-0-5%2520my-0-25%2522%253EE-mail%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522e-mail%2522%2520id%253D%2522email%2522%2520class%253D%2522input-default%2520p-0-5%2520rounded-md%2520input-error%2522%2520placeholder%253D%2522example%2540example.com%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-error-msg%2520text-sm%2520font-sbold%2520m-0-5%2522%253EIncorrect%2520E-mail%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--%2520Input%2520Textbox%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520my-1%2520mx-0-5%2520w-40%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-textbox%2522%2520class%253D%2522font-bold%2520mx-0-5%2520my-0-25%2522%253EComments%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%2520class%253D%2522input-textbox%2520w-full%2520h-15%2520p-1%2520rounded-md%2522%2520id%253D%2522input-textbox%2522%2520placeholder%253D%2522write%2520your%2520thoughts...%2522%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div id="Lists">
+                <div class="component-desc">
+                    <h2 class="component-desc-heading">Lists</h2>
+                    <p class="component-desc-para">Lists can be used at so many places, navigation bar, stacked
+                        notifications, article pages, etc.</p>
+                </div>
+
+                <h3>Example of Unordered and Ordered Lists</h3>
+                <p class="component-desc-para">Add class according to bullet style. Copy html code below and add your
+                    desired list items.</p>
+
+                <div class="component-display-container flex-col gap-2">
+                    <!-- Spaced List -->
+
+                    <ul class="list-spaced m-2 p-1">
+                        <p class="list-heading h4">List Heading</p>
+                        <li class="list-item text-md">List Item 1</li>
+                        <li class="list-item text-md">List Item 2</li>
+                        <li class="list-item text-md">List Item 3</li>
+                        <li class="list-item text-md">List Item 4</li>
+                        <li class="list-item text-md">List Item 5</li>
+                    </ul>
+                    <br>
+
+                    <!-- Inline List -->
+
+                    <ul class="flex-row text-md">
+                        <li class="m-1">List Item 1</li>
+                        <li class="m-1">List Item 2</li>
+                        <li class="m-1">List Item 3</li>
+                    </ul>
+                    <br>
+
+                    <!-- Stacked Lists -->
+
+                    <!-- list with numbers -->
+
+                    <ol class="ordered-list m-2 p-1 text-md">
+                        <li>List item with numbers</li>
+                        <li>List item with numbers</li>
+                        <li>List item with numbers</li>
+                        <li>List item with numbers</li>
+                        <li>List item with numbers</li>
+                    </ol>
+                    <br>
+
+                    <!-- Reverse Stacked List -->
+
+                    <ol class="stacked-list m-2 p-2 text-md" reversed>
+                        <li>Reversed list item 1</li>
+                        <li>Reversed list item 2</li>
+                        <li>Reversed list item 3</li>
+                        <li>Reversed list item 4</li>
+                        <li>Reversed list item 5</li>
+                    </ol>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Spaced%2520List%2520--%253E%250A%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list-spaced%2520m-2%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-heading%2520h4%2522%253EList%2520Heading%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2520text-md%2522%253EList%2520Item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2520text-md%2522%253EList%2520Item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2520text-md%2522%253EList%2520Item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2520text-md%2522%253EList%2520Item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2520text-md%2522%253EList%2520Item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253Cbr%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Inline%2520List%2520--%253E%250A%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522flex-row%2520text-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522m-1%2522%253EList%2520Item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522m-1%2522%253EList%2520Item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522m-1%2522%253EList%2520Item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253Cbr%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Stacked%2520Lists%2520--%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520list%2520with%2520numbers%2520--%253E%250A%250A%2520%2520%2520%2520%253Col%2520class%253D%2522ordered-list%2520m-2%2520p-1%2520text-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%2520with%2520numbers%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%2520%2520%2520%2520%253Cbr%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Reverse%2520Stacked%2520List%2520--%253E%250A%250A%2520%2520%2520%2520%253Col%2520class%253D%2522stacked-list%2520m-2%2520p-2%2520text-md%2522%2520reversed%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EReversed%2520list%2520item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Typography">
+
+                <h2 class="component-desc-heading">Typography</h2>
+                <p class="component-desc-para">Check out below text utilities.</p>
+
+                <h3>Example of Heading text</h3>
+                <p class="component-desc-para">For heading u can use h1, h2, h3, h4, h5, h6 elements. <br>
+                    The same font-styling is present for class names <span class="color-primary font-sbold">h1, h2, h3,
+                        h4,
+                        h5, h6</span> class. You can add one of these classes to style the text.</p>
+                <div class="component-display-container flex-col gap-2">
+
+                    <!-- Headings -->
+
+                    <p class="h1 mx-1 my-0-5 font-bold">Example of Heading - 1</p>
+                    <p class="h2 mx-1 my-0-5 font-bold">Example of Heading - 2</p>
+                    <p class="h3 mx-1 my-0-5 font-bold">Example of Heading - 3</p>
+                    <p class="h4 mx-1 my-0-5 font-bold">Example of Heading - 4</p>
+                    <p class="h5 mx-1 my-0-5 font-bold">Example of Heading - 5</p>
+                    <p class="h6 mx-1 my-0-5 font-bold">Example of Heading - 6</p>
+                </div>
+
+                <div class="component-display-container flex-col gap-2">
+
+
+                    <!-- Text Sizes -->
+
+                    <p class="text-xs font-regular mx-1 my-0-5">Extra Small Text</p>
+                    <p class="text-sm font-regular mx-1 my-0-5">Small Text</p>
+                    <p class="text-md font-regular mx-1 my-0-5">Medium Text</p>
+                    <p class="text-lg font-regular mx-1 my-0-5">Large Text</p>
+                    <p class="text-xl font-regular mx-1 my-0-5">Extra Large Text</p>
+                </div>
+
+                <div class="component-display-container-without-flex">
+
+                    <!-- Text Positions -->
+
+                    <p class="text-left text-md font-regular mx-1 my-0-5">Left Aligned Text</p>
+                    <p class="text-center text-md font-regular mx-1 my-0-5">Center Aligned Text</p>
+                    <p class="text-right text-md font-regular mx-1 my-0-5">Right Aligned Text</p>
+                </div>
+
+                <div class="component-display-container flex-col gap-2">
+
+                    <!-- Colored Text -->
+
+                    <p class="text-color-primary text-md font-regular mx-1 my-0-5">Primary Colored Text Example</p>
+                    <p class="text-color-secondary text-md font-regular mx-1 my-0-5">Secondary Colored Text Example</p>
+                    <p class="text-color-success text-md font-regular mx-1 my-0-5">Success Colored Text Example</p>
+                    <p class="text-color-warning text-md font-regular mx-1 my-0-5">Warning Colored Text Example</p>
+                    <p class="text-color-error text-md font-regular mx-1 my-0-5">Error Colored Text Example</p>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Headings%2520--%253E%250A%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h1%2520mx-1%2520my-0-5%2520font-bold%2522%253EExample%2520of%2520Heading%2520-%25201%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h2%2520mx-1%2520my-0-5%2520font-bold%2522%253EExample%2520of%2520Heading%2520-%25202%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h3%2520mx-1%2520my-0-5%2520font-bold%2522%253EExample%2520of%2520Heading%2520-%25203%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h4%2520mx-1%2520my-0-5%2520font-bold%2522%253EExample%2520of%2520Heading%2520-%25204%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h5%2520mx-1%2520my-0-5%2520font-bold%2522%253EExample%2520of%2520Heading%2520-%25205%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2520mx-1%2520my-0-5%2520font-bold%2522%253EExample%2520of%2520Heading%2520-%25206%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Text%2520Sizes%2520--%253E%250A%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-xs%2520font-regular%2520mx-1%2520my-0-5%2522%253EExtra%2520Small%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-sm%2520font-regular%2520mx-1%2520my-0-5%2522%253ESmall%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253EMedium%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-lg%2520font-regular%2520mx-1%2520my-0-5%2522%253ELarge%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-xl%2520font-regular%2520mx-1%2520my-0-5%2522%253EExtra%2520Large%2520Text%253C%252Fp%253E%250A%250A%250A%2520%2520%2520%2520%253C%21--%2520Text%2520Positions%2520--%253E%250A%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-left%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253ELeft%2520Aligned%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-center%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253ECenter%2520Aligned%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-right%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253ERight%2520Aligned%2520Text%253C%252Fp%253E%250A%250A%250A%250A%253C%21--%2520Colored%2520Text%2520--%253E%250A%250A%253Cp%2520class%253D%2522text-color-primary%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253EPrimary%2520Colored%2520Text%2520Example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-color-secondary%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253ESecondary%2520Colored%2520Text%2520Example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-color-success%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253ESuccess%2520Colored%2520Text%2520Example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-color-warning%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253EWarning%2520Colored%2520Text%2520Example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-color-error%2520text-md%2520font-regular%2520mx-1%2520my-0-5%2522%253EError%2520Colored%2520Text%2520Example%253C%252Fp%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Navigation">
+                <h2 class="component-desc-heading">Navigation</h2>
+                <p class="component-desc-para">Navigation bar is used to navigate through the web apps or
+                    websites. This navigation component is responsive. It is a hamburger menu in medium and small
+                    devices</p>
+                <h3>Example of Navigation</h3>
+                <p class="component-desc-para">Navigation is broken in 4 parts:</p>
+                <ul>
+                    <li>
+                        Brand logo- It will be displayed in L,XL devices and hidden on M,S,XS devices
+                    </li>
+                    <li>
+                        Brand title- It will be displayed in M,S,XS devices and hidden on L,XL devices
+                    </li>
+                    <li>
+                        Search bar
+                    </li>
+                    <li>
+                        Section to show icons and text below it on nav bar, text will get hidden in M,S,XS devices. If
+                        you want to hide any of the icon, add <span
+                            class="color-primary font-sbold">hide-profile-mobile</span> style for that li elements
+                    </li>
+                </ul>
+
+                <div class="component-display-container">
+                    <nav
+                        class="nav-bar w-full h-fit font-bold px-3 py-0-5 rounded-md flex-row flex-justify-between flex-align-center">
+                        <div class="flex-row flex-justify-between flex-align-center flex-gap-1">
+                            <div class="flex-row flex-justify-center flex-align-center flex-gap-2">
+                                <!-- Brand Logo -->
+                                <img class="nav-logo rounded-circle" src="/Assets/cosmosIcon.png" alt="Logo" width="60"
+                                    height="60">
+                                <!-- Brand Title -->
+                                <h1 class="nav-logo-title h1 font-xbold">My Store</h1>
+                            </div>
+                        </div>
+
+                        <!-- search bar -->
+                        <div class="flex-row flex-justify-between flex-align-center flex-gap-1">
+                            <form
+                                class="search-bar flex-row flex-justify-between flex-align-center flex-gap-1 px-1 py-0-5 rounded-md w-40">
+                                <button class="btn btn-icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <input class="search-bar-input text-sm" type="search" placeholder="Type to search">
+                            </form>
+                        </div>
+
+                        <!-- Icons and Buttons -->
+                        <div class="nav-actions-container flex-row flex-justify-between flex-align-center flex-gap-2">
+                            <a href="#" class="btn relative mx-0-5 my-1 w-max h-max">
+                                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                                <span
+                                    class="badge-notification-count absolute w-2 h-2 p-0-5 rounded-full font-bold flex-row flex-justify-center flex-align-center text-sm">5
+                                </span>
+                            </a>
+                            <a href="#" class="btn relative mx-0-5 my-1 w-max h-max">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <span
+                                    class="badge-notification-count absolute w-2 h-2 p-0-5 rounded-full font-bold flex-row flex-justify-center flex-align-center text-sm">8
+                                </span>
+                            </a>
+                            <a href="#" class="btn relative mx-0-5 my-1 w-max h-max">
+                                <i class="fa-solid fa-user fa-xl"></i>
+                            </a>
+                            <a href="#" class="btn btn-logout px-1 py-0-5 rounded-md">Logout</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-bar%2520w-full%2520h-fit%2520font-bold%2520px-3%2520py-0-5%2520rounded-md%2520flex-row%2520flex-justify-between%2520flex-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520flex-gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-center%2520flex-align-center%2520flex-gap-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Brand%2520Logo%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522nav-logo%2520rounded-circle%2522%2520src%253D%2522%252FAssets%252FcosmosIcon.png%2522%2520alt%253D%2522Logo%2522%2520width%253D%252260%2522%2520height%253D%252260%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Brand%2520Title%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522nav-logo-title%2520h1%2520font-xbold%2522%253EMy%2520Store%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520search%2520bar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520flex-gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522search-bar%2520flex-row%2520flex-justify-between%2520flex-align-center%2520flex-gap-1%2520px-1%2520py-0-5%2520rounded-md%2520w-40%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-magnifying-glass%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522search-bar-input%2520text-sm%2522%2520type%253D%2522search%2522%2520placeholder%253D%2522Type%2520to%2520search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Icons%2520and%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-actions-container%2520flex-row%2520flex-justify-between%2520flex-align-center%2520flex-gap-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520relative%2520mx-0-5%2520my-1%2520w-max%2520h-max%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2520fa-xl%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522badge-notification-count%2520absolute%2520w-2%2520h-2%2520p-0-5%2520rounded-full%2520font-bold%2520flex-row%2520flex-justify-center%2520flex-align-center%2520text-sm%2522%253E5%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520relative%2520mx-0-5%2520my-1%2520w-max%2520h-max%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2520fa-xl%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522badge-notification-count%2520absolute%2520w-2%2520h-2%2520p-0-5%2520rounded-full%2520font-bold%2520flex-row%2520flex-justify-center%2520flex-align-center%2520text-sm%2522%253E8%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520relative%2520mx-0-5%2520my-1%2520w-max%2520h-max%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-user%2520fa-xl%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-logout%2520px-1%2520py-0-5%2520rounded-md%2522%253ELogout%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fnav%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Toast">
+                <h2 class="component-desc-heading">Toast</h2>
+                <p class="component-desc-para">This component can be used for toast or snackbar component.
+                    Toast is mostly used to show feedback message. Snackbar is to used show message that need user
+                    action</p>
+
+                <h3>Example of Toast</h3>
+                <p class="component-desc-para">Add <span class="color-primary font-sbold">toast</span> class to wrapper.
+                    Toast has 3 themes, for
+                    error,
+                    success, warning, add <span class="color-primary font-sbold">toast-success, toast-error,
+                        toast-inform</span> class to style the theme.</p>
+                <div class="component-display-container">
+                    <img src="../assets/previews/toasts.png" alt="Toasts Preview Image">
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Success%2520Toast%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-success%2520fixed%2520w-fit%2520px-2%2520py-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Successfully%2520Submitted%21%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-xl%2520ml-3%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Error%2520Toast%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-error%2520fixed%2520w-fit%2520px-2%2520py-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Error%21%2520Please%2520try%2520again%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-xl%2520ml-3%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Warning%2520Toast%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-warning%2520fixed%2520w-fit%2520px-2%2520py-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Warning%21%2520Please%2520Enter%2520Valid%2520Details%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-xl%2520ml-3%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Inform%2520Toast%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-inform%2520fixed%2520w-fit%2520px-2%2520py-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Connecting......%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-xl%2520ml-3%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Rating">
+                <h2 class="component-desc-heading">Rating</h2>
+                <p class="component-desc-para">Rating components can be used as read-only badge or in reviews
+                    section. Can be used in reviews section as form too.</p>
+
+                <h3>Example of read-only ratings</h3>
+                <p class="component-desc-para">There are two types, input read-only and badge</p>
+                <div class="component-display-container">
+                    <!-- Rating- input element-->
+
+                    <div class="rating-star-container m-0-5 px-1 py-0-5 w-fit">
+                        <label>
+                            <input class="rating-star-input" type="checkbox" checked>
+                            <i class="fas fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox" checked>
+                            <i class="fas fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox" checked>
+                            <i class="fas fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox">
+                            <i class="fas fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox">
+                            <i class="fas fa-star rating-star-icon"></i>
+                        </label>
+                    </div>
+
+                    <!-- Rating badge, read only -->
+
+                    <div
+                        class="rating-badge w-fit text-sm-2 m-0-5 px-0-5 py-0-25 flex-row flex-justify-center flex-align-center flex-gap-0-5">
+                        <span>4</span>
+                        <span class="rating-badge-star">
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Rating-%2520input%2520element--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating-star-container%2520m-0-5%2520px-1%2520py-0-5%2520w-fit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Rating%2520badge%252C%2520read%2520only%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating-badge%2520w-fit%2520text-sm-2%2520m-0-5%2520px-0-5%2520py-0-25%2520flex-row%2520flex-justify-center%2520flex-align-center%2520flex-gap-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-badge-star%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Modal">
+                <h2 class="component-desc-heading">Modal</h2>
+                <p class="component-desc-para">Modals are positioned over everything else in the document and
+                    remove scroll from the page. It gets closed only with close button on modal pop-up.</p>
+
+                <h3>Example of Modal</h3>
+                <p class="component-desc-para">You need to have wrapper div <span
+                        class="color-primary font-sbold">modal-interstitial</span> class. Inside
+                    that, you can wrap content inside <span class="color-primary font-sbold">div.modal-content</span>
+                    that you
+                    need to show in pop-up.
+                    <br>Check out below code.
+                </p>
+
+                <div class="component-display-container">
+                    <img src="../assets/previews/modal.png" alt="Modal Preview Image" width="600px">
+                </div>
+
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2520relative%2520flex-col%2520flex-justify-center%2520flex-align-center%2520w-35%2520h-30%2520p-2%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-close%2520absolute%2520btn%2520btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-xl%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522m-1%2520text-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h3%2520font-bold%2520my-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Limited%2520Time%2520Deal%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-md%2520my-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520not%2520my%2520expertise%2520so%2520I%2520am%2520out.%2520But%2520I%2520wish%2520you%2520all%2520the%2520best.%2520You%2520can%2520close%2520it%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-center%2520flex-align-center%2520h-fit%2520w-full%2520flex-gap-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520rounded-md%2520m-0-5%2520px-1%2520py-0-25%2520inline-block%2522%253EGo%2520Back%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520rounded-md%2520m-0-5%2520px-1%2520py-0-25%2520inline-block%2522%2520href%253D%2522%2523%2522%2520target%253D%2522_blank%2522%253EGo%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Nowhere%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="Slider">
+                <h2 class="component-desc-heading">Slider</h2>
+                <p class="component-desc-para">Sliders are used to decide range for something like sound in
+                    videos, price in shopping sites, etc.</p>
+
+                <h3>Example of styled slider</h3>
+                <div class="component-display-container">
+
+                    <!-- Custom Styled Slider -->
+
+                    <div class="w-20">
+                        <label class="slider-track relative h-3 w-full" for="range">
+                            <input class="slider relative h-3 w-full" type="range" name="range" id="range" min="0"
+                                max="150" value="15" />
+                        </label>
+                    </div>
+
+                    <!-- slider-with-icon -->
+
+                    <div class="flex-row flex-wrap flex-justify-center flex-align-center w-fit">
+                        <label class="mx-1" for="range"><i class="fas fa-volume-up"></i></label>
+                        <input type="range" name="range" id="range" min="0" max="100" value="30" />
+                    </div>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Custom%2520Styled%2520Slider%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522w-20%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522slider-track%2520relative%2520h-3%2520w-full%2522%2520for%253D%2522range%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522slider%2520relative%2520h-3%2520w-full%2522%2520type%253D%2522range%2522%2520name%253D%2522range%2522%2520id%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522150%2522%2520value%253D%252215%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520slider-with-icon%2520--%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-wrap%2520flex-justify-center%2520flex-align-center%2520w-fit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522mx-1%2522%2520for%253D%2522range%2522%253E%253Ci%2520class%253D%2522fas%2520fa-volume-up%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520name%253D%2522range%2522%2520id%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%252230%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+
+            <div id="Grid">
+                <h2 class="component-desc-heading">Grid Simplified</h2>
+                <p class="component-desc-para">Use grid when you want sections in view. Check below some
+                    examples of side by side cards.</p>
+
+                <h3>Examples of side by side (50:50), (70:30), (30:70) and grid-4-column-layout for product listing page
+                    layouts</h3>
+                <p class="component-desc-para">Add <span class="color-primary font-sbold">grid-50-50-layout,
+                        grid-70-30-layout, grid-30-70-layout, grid-4-column-layout </span> class on wrapper divs.</p>
+                <div class="component-display-container">
+                    <!-- Grid 50-50 Layout -->
+
+                    <div class="grid-50-50-layout m-1 grid grid-cols-2 grid-rows-1">
+                        <div>
+                            <img class="w-full h-full" src="/Assets/boysShoesLS.jpg">
+                        </div>
+                        <div class="flex-col flex-justify-center flex-align-center gap-1">
+                            <p class="h1 font-bold">King of Shoes</p>
+                            <p class="h4">Best Value @ Rs.999</p>
+                            <a class="btn btn-primary m-1 p-0-75 rounded-md">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-display-container">
+                    <!-- Grid 70-30 Layout -->
+
+                    <div class="grid-70-30-layout m-1 grid grid-cols-3 grid-rows-1">
+                        <div class="grid-col-span-2">
+                            <img class="w-full h-full" src="/Assets/boysShoesLS.jpg">
+                        </div>
+                        <div class="flex-col flex-justify-center flex-align-center gap-1">
+                            <p class="h1 font-bold">King of Shoes</p>
+                            <p class="h4">Best Value @ Rs.999</p>
+                            <a class="btn btn-primary m-1 p-0-75 rounded-md">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-display-container">
+                    <!-- Grid 30-70 Layout -->
+
+                    <div class="grid-30-70-layout m-1 grid grid-cols-3 grid-rows-1">
+                        <div>
+                            <img class="w-full h-full" src="/Assets/boysShoesLS.jpg">
+                        </div>
+                        <div class="grid-col-span-2 flex-col flex-justify-center flex-align-center gap-1">
+                            <p class="h1 font-bold">King of Shoes</p>
+                            <p class="h4">Best Value @ Rs.999</p>
+                            <a class="btn btn-primary m-1 p-0-75 rounded-md">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-display-container-without-flex">
+                    <!-- Grid multi-column Layout -->
+
+                    <div class="grid grid-col-autofit-w-25">
+
+                        <!-- Card Basic -->
+
+                        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                            <img src="/Assets/girlShoes1.jpg" alt="Product-Image"
+                                class="w-full h-60-pc rounded-inherit">
+                            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                                heel.</p>
+                            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                                <div>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to
+                                        Cart</button>
+                                </div>
+                                <div>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card with Badge -->
+
+                        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                            <img src="/Assets/girlShoes1.jpg" alt="Product-Image"
+                                class="w-full h-60-pc rounded-inherit">
+                            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                                heel.</p>
+                            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                                <div>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to
+                                        Cart</button>
+                                </div>
+                                <div>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <span
+                                class="card-badge text-badge-highlight m-0-25 px-0-75 py-0-25 rounded-md text-md w-fit absolute">New</span>
+                        </div>
+
+                        <!-- Card with Dismiss -->
+
+                        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                            <img src="/Assets/girlShoes1.jpg" alt="Product-Image"
+                                class="w-full h-60-pc rounded-inherit">
+                            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                                heel.</p>
+                            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                                <div>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to
+                                        Cart</button>
+                                </div>
+                                <div>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="card-dismiss-button card-button absolute text-lg"><i
+                                    class="fa-regular fa-circle-xmark"></i></button>
+                        </div>
+
+                        <!-- Card with Text Overlay -->
+
+                        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                            <img src="/Assets/girlShoes1.jpg" alt="Product-Image"
+                                class="w-full h-60-pc rounded-inherit">
+                            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                                heel.</p>
+                            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                                <div>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to
+                                        Cart</button>
+                                </div>
+                                <div>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="card-text-overlay-container absolute flex-row flex-justify-center flex-align-center w-full h-full rounded-inherit">
+                                <p class="text-xl">Sold Out</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Basic -->
+
+                        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                            <img src="/Assets/girlShoes1.jpg" alt="Product-Image"
+                                class="w-full h-60-pc rounded-inherit">
+                            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                                heel.</p>
+                            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                                <div>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to
+                                        Cart</button>
+                                </div>
+                                <div>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card with Badge -->
+
+                        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+                            <img src="/Assets/girlShoes1.jpg" alt="Product-Image"
+                                class="w-full h-60-pc rounded-inherit">
+                            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+                            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+                            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed
+                                heel.</p>
+                            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                                <div>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to
+                                        Cart</button>
+                                </div>
+                                <div>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <span
+                                class="card-badge text-badge-highlight m-0-25 px-0-75 py-0-25 rounded-md text-md w-fit absolute">New</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=10px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Grid%252050-50%2520Layout%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-50-50-layout%2520m-1%2520grid%2520grid-cols-2%2520grid-rows-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2522%2520src%253D%2522%252FAssets%252FboysShoesLS.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520flex-justify-center%2520flex-align-center%2520gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h1%2520font-bold%2522%253EKing%2520of%2520Shoes%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h4%2522%253EBest%2520Value%2520%2540%2520Rs.999%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-primary%2520m-1%2520p-0-75%2520rounded-md%2522%253EExplore%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Grid%252070-30%2520Layout%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-70-30-layout%2520m-1%2520grid%2520grid-cols-3%2520grid-rows-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-col-span-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2522%2520src%253D%2522%252FAssets%252FboysShoesLS.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-col%2520flex-justify-center%2520flex-align-center%2520gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h1%2520font-bold%2522%253EKing%2520of%2520Shoes%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h4%2522%253EBest%2520Value%2520%2540%2520Rs.999%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-primary%2520m-1%2520p-0-75%2520rounded-md%2522%253EExplore%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253C%21--%2520Grid%252030-70%2520Layout%2520--%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-30-70-layout%2520m-1%2520grid%2520grid-cols-3%2520grid-rows-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-full%2520h-full%2522%2520src%253D%2522%252FAssets%252FboysShoesLS.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-col-span-2%2520flex-col%2520flex-justify-center%2520flex-align-center%2520gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h1%2520font-bold%2522%253EKing%2520of%2520Shoes%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h4%2522%253EBest%2520Value%2520%2540%2520Rs.999%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-primary%2520m-1%2520p-0-75%2520rounded-md%2522%253EExplore%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%2520"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=10px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Grid%2520multi-column%2520Layout%2520--%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid%2520grid-col-autofit-w-25%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520Basic%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Part%2520two%2520is%2520in%2520below%2520snippet...%2520--%253E"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=10px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253C%21--%2520Part%2520two%2520of%2520code%2520continues%2520from%2520here...%2520--%253E%2520%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Badge%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2520text-badge-highlight%2520m-0-25%2520px-0-75%2520py-0-25%2520rounded-md%2520text-md%2520w-fit%2520absolute%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Part%2520three%2520is%2520in%2520below%2520snippet...%2520--%253E%250A%2520%2520%2520%2520%2520%2520"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=10px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Part%2520three%2520of%2520code%2520continues%2520from%2520here...%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Dismiss%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss-button%2520card-button%2520absolute%2520text-lg%2522%253E%253Ci%2520class%253D%2522fa-regular%2520fa-circle-xmark%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Part%2520four%2520is%2520in%2520below%2520snippet...%2520--%253E%250A"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-box">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2879%2C189%2C186%2C1%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=58px&wc=true&wa=true&pv=35px&ph=37px&ln=false&fl=1&fm=Hack&fs=10px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253C%21--%2520Part%2520four%2520of%2520code%2520continues%2520from%2520here...%2520--%253E%2520%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520Card%2520with%2520Text%2520Overlay%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520relative%2520flex-col%2520flex-justify-start%2520h-fit%2520w-23%2520m-1%2520rounded-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FgirlShoes1.jpg%2522%2520alt%253D%2522Product-Image%2522%2520class%253D%2522w-full%2520h-60-pc%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2520mx-0-75%2520my-0-5%2520h3%2522%253EArtistic%2520Weapon%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2520mx-0-75%2520h6%2522%253EIndian%2520Mother%27s%252FGf%27s%2520Brahmastra%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-para%2520mx-0-75%2520my-1-5%2520text-sm-2%2522%253EWill%2520hit%2520best%2520when%2520aimed%2520for%2520head%2520with%2520pointed%2520heel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520flex-justify-between%2520flex-align-center%2520mx-0-75%2520my-0-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520m-0%2520p-0-5%2520font-bold%2520text-md%2520rounded-sm%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button%2520mr-0-25%2520p-0-25%2520text-md%2520rounded-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-ellipsis-vertical%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-overlay-container%2520absolute%2520flex-row%2520flex-justify-center%2520flex-align-center%2520w-full%2520h-full%2520rounded-inherit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-xl%2522%253ESold%2520Out%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253C%21--%2520End%2520of%2520the%2520code%2520--%253E%250A"
+                        style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <hr>
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer class="p-2 w-full h-fit flex-col flex-justify-center flex-align-center gap-1">
+            <p class="h3 w-fit">
+                Made with<span><i class="fa-solid fa-heart color-tertiary mx-1"></i></span>by<span><a
+                        class="btn btn-link-animated-1 mx-1 font-xbold" href="https://rishbitsnbytes.netlify.app/">
+                        <span class="color-tertiary">Rishabh</span></a>
+            </p>
+            <div>
+                <a class="mx-2" href="https://github.com/rishbitsnbytes">
+                    <span class="text-xxl font-bold"><i class="fa-brands fa-github btn btn-icon"></i>
+                    </span>
+                </a>
+                <a class="mx-2" href="https://twitter.com/rishbitsnbytes">
+                    <span class="text-xxl font-bold"><i class="fa-brands fa-twitter btn btn-icon"></i>
+                    </span>
+                </a>
+                <a class="mx-2" href="https://www.linkedin.com/in/rishrathore/">
+                    <span class="text-xxl font-bold"><i class="fa-brands fa-linkedin btn btn-icon"></i>
+                    </span>
+                </a>
+            </div>
+            <p>
+                <span><i class="fa-regular fa-copyright"></i>
+                </span>2022 - rishbitsnbytes
+            </p>
+
+        </footer>
+
+    </div>
+
 </body>
+
 </html>

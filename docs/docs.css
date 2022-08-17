@@ -1,0 +1,107 @@
+@import url(../styles/all-imports.css);
+
+
+hr {
+    margin: 3rem 0rem 5rem 0rem;
+    color: var(--gray-7);
+    border: 1px solid;
+}
+
+.nav-bar {
+    grid-area: header;
+    box-shadow: 0px 1px 5px 1px var(--color-tertiary);
+}
+
+.sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+    overflow-x: hidden;
+	position: sticky;
+	top: 0rem;
+	height: calc(100vh);
+    box-shadow: 1px 1px 10px 1px var(--color-tertiary);
+}
+
+ .sidebar-links {
+	padding-inline-start: 0;
+	list-style-position: inside;
+}
+
+.sidebar-link-item:hover {
+	background-color: var(--color-secondary);
+    border-radius: var(--br-md);
+    transform: scale(1.2);
+    transition: transform 300ms ease-in-out;
+}
+
+.sidebar-link-item > a {
+    display: block;
+	color: var(--color-tertiary);
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.grid-container-page-layout {
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr);
+    grid-template-areas: 
+            'header header header header header header'
+            'sidebar main main main main main'
+            'sidebar main main main main main'
+            'sidebar main main main main main'
+            'sidebar main main main main main'
+            'sidebar main main main main main'
+            'sidebar footer footer footer footer footer';
+    
+}
+
+footer {
+    grid-area: footer;
+}
+
+.main-section {
+    grid-area: main;
+    padding: 3rem 5rem;
+	width: 100%;
+	max-width: 100vw;
+}
+
+.component-desc {
+    margin: 1rem 0 2rem 0;
+}
+
+.component-desc-heading {
+    font-size: var(--h2);
+    font-weight: var(--weight-bold);
+}
+
+.component-desc-para {
+    font-size: var(--text-md);
+    font-weight: var(--weight-thin);
+    margin: 0.5rem 0;
+}
+
+.component-display-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    align-items: baseline;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--br-md);
+    width: 100%;
+}
+
+.component-display-container-without-flex {
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--br-md);
+    width: 100%;
+}
+
+.code-box {
+    height: 35rem;
+    margin: 2rem 0;
+}
