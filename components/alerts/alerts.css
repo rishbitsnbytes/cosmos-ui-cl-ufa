@@ -1,0 +1,35 @@
+@import url(../../styles/all-imports.css);
+
+.alert {
+    max-width: fit-content;
+}
+
+.btn-alert-primary {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.alert-primary {
+    background-color: var(--color-alert-primary-bg);
+    color: var(--color-alert-primary-text);
+}
+
+.alert-secondary {
+    background-color: var(--color-alert-secondary-bg);
+    color: var(--color-alert-secondary-text);
+}
+
+.alert-success {
+    background-color: var(--color-alert-success-bg);
+    color: var(--color-alert-success-text);
+}
+
+.alert-error {
+    background-color: var(--color-alert-error-bg);
+    color: var(--color-alert-error-text);
+}
+
+.alert-warning {
+    background-color: var(--color-alert-warning-bg);
+    color: var(--color-alert-warning-text);
+}

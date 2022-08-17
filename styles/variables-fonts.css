@@ -40,7 +40,8 @@
     --color-text-sub-heading: var(var(--black-shade-1));
     --color-text-dimmed: var(--gray-9);
     --color-text-active: var(--color-tertiary);
-
+    --color-text-contrast-to-primary: var(--white);
+    
     /* Shadow Colors */
     --color-shadow-bg: var(--gray-9);
 
@@ -57,7 +58,7 @@
     --color-success: #009E60;
     --color-alert-primary-bg: #7FD2E6;
     --color-alert-primary-text: #29438b;
-    --color-alert-secondary-bg: #eaeaec;
+    --color-alert-secondary-bg: var(--gray-5);
     --color-alert-secondary-text: #696b79;
     --color-alert-success-bg: #84f1c9;
     --color-alert-success-text: #1b7052;
@@ -76,12 +77,14 @@
     /* End of Color Variables*/
 
     /* Border Radius */
-    --br-50: 50%;
-    --br-xl: 15px;
-    --br-lg: 10px;
-    --br-md: 6px;
-    --br-sm: 4px;
-    --br-xs: 3px;
+    --br-0: 0rem;  /* 0px */
+    --br-max: 9999px;  /* max */
+    --br-50: 50%;  /* circle */
+    --br-xl: 1.5rem;  /* 15px*/
+    --br-lg: 1rem;  /* 10px */
+    --br-md: 0.6rem;  /* 6px */
+    --br-sm: 0.4rem;  /* 4px */
+    --br-xs: 0.3rem;  /* 3px */
 
     /* Standard font, line-height and font-weight */
     --text: 1.25rem;

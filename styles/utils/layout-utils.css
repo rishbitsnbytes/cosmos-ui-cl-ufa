@@ -1,0 +1,76 @@
+/* Flex */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-start {
+    justify-content: flex-start;
+}
+
+.flex-justify-end {
+    justify-content: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Border-radii */
+.rounded-none {
+    border-radius: var(--br-0);
+}
+
+/* For pill buttons */
+.rounded-full {
+    border-radius: var(--br-max);
+}
+
+.rounded-circle {
+    border-radius: var(--br-50);
+}
+
+.rounded-xs {
+    border-radius: var(--br-xs);
+}
+
+.rounded-sm {
+    border-radius: var(--br-sm);
+}
+
+.rounded-md {
+    border-radius: var(--br-md);
+}
+
+.rounded-lg {
+    border-radius: var(--br-lg);
+}
+
+.rounded-xl {
+    border-radius: var(--br-xl);
+}
