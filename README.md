@@ -1,7 +1,7 @@
 <h1 align="center">
   <br />
   <a href="https://cosmos-ui-cl-ufa.vercel.app/">
-      <img src="https://cosmos-ui-cl-ufa.vercel.app/styles/assets/cosmosIcon.png" alt="Cosmos UI" width="300"></a>
+      <img src="https://cosmos-ui-cl-ufa.vercel.app/assets/cosmosIcon.png" alt="Cosmos UI" width="300"></a>
   <br />
   <br />
   Cosmos UI
