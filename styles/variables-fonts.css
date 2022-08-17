@@ -20,6 +20,7 @@
     --color-secondary-bg: #c5dedd;
     --color-tertiary-bg: #041C32;
     --color-primary-bg-opacity: rgba(79, 189, 186, 0.7);
+    --color-blur-bg: rgba(0,0,0,0.5);
 
     /* Declarative Commonly used colors */
     --gray-1: #F5F5F5;
@@ -144,6 +145,8 @@
     --h6: 1.25rem;
 
     /* z-indices */
-    --z-index-toast: 9;
+    --z-index-modal: 9;
+    --z-index-toast: 7;
     --z-index-badges: 3;
+    
 }
