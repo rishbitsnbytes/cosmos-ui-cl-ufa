@@ -1,7 +1,7 @@
 <h1 align="center">
   <br />
-  <a href="https://cosmos-ui-cl.netlify.app/">
-      <img src="https://cosmos-ui-cl.netlify.app/Assets/cosmosIcon.png" alt="Cosmos UI" width="300"></a>
+  <a href="https://cosmos-ui-cl-ufa.vercel.app/">
+      <img src="https://cosmos-ui-cl-ufa.vercel.app/styles/assets/cosmosIcon.png" alt="Cosmos UI" width="300"></a>
   <br />
   <br />
   Cosmos UI
@@ -48,7 +48,7 @@
 
 ## **How To Use**
 
-Visit [Cosmos UI Documentation Website](https://cosmos-ui-cl.netlify.app/) and check out the documentation for the library. To use Cosmos in your project, include the CSS file in the main stylesheet using `@import` or in the `<head>` of your `index.html` file using `<link>`. 
+Visit [Cosmos UI Documentation Website](https://cosmos-ui-cl-ufa.vercel.app/) and check out the documentation for the library. To use Cosmos in your project, include the CSS file in the main stylesheet using `@import` or in the `<head>` of your `index.html` file using `<link>`. 
 <br />
 Copy-paste the below code in the `<head>` section of your HTML files to load predefined styles, components and utilities. 
 
@@ -58,14 +58,14 @@ Documentation has all the demo display of all the components which will help you
 ### Import in the `<head>` of HTML file:
 ```HTML
 
-<link rel="stylesheet" href="https://cosmos-ui-cl.netlify.app/Styles/cosmos-ui.css"/>
+<link rel="stylesheet" href="https://cosmos-ui-cl-ufa.vercel.app/styles/cosmos-ui.css"/>
 
 ```
 
 ### Import in your main CSS stylesheet:
 ```CSS
 
-@import "https://cosmos-ui-cl.netlify.app/Styles/comos-ui.css";
+@import "https://cosmos-ui-cl-ufa.vercel.app/styles/comos-ui.css";
 
 ```
 
@@ -75,13 +75,13 @@ Documentation has all the demo display of all the components which will help you
 
 ## **Components**
 
-- [Alert](https://cosmos-ui-cl.netlify.app/docs/docs#Alerts)
+- [Alert](https://cosmos-ui-cl-ufa.vercel.app/docs/docs#Alerts)
     - Cosmos offers simple alerts and alerts with a close icon in the following themes - primary, secondary, success, warning, and error.
     - To add alerts to your project, use the following url-
     - Import using HTML
     ```HTML
 
-        <link rel="stylesheet"href="https://cosmos-ui-cl.netlify.app/Components/Alerts/alerts.css" />
+        <link rel="stylesheet"href="https://cosmos-ui-cl-ufa.vercel.app/components/alerts/alerts.css" />
 
     ```
     - OR, Import using CSS
