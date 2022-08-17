@@ -48,6 +48,9 @@
 
     /* Specific Components */
     --color-search-bar-bg: var(--gray-3);
+    --color-rating-star-blank: rgba(0, 0, 0, 0.25);
+    --color-rating-star-hover: #ffd675;
+    --color-rating-star-checked: #ffb400;
 
     /* Input Form colors */
     --color-form-element-border: var(--black);
