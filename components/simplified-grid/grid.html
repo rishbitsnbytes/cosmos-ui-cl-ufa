@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rishabh Rathore">
+    <link rel="stylesheet" href="./grid.css">
+    <script src="https://kit.fontawesome.com/fa8f01e628.js" crossorigin="anonymous"></script>
+    <title>Grids-Simplified</title>
+</head>
+
+<body>
+
+    <!-- Grid 50-50 Layout -->
+
+    <div class="grid-50-50-layout m-1 grid grid-cols-2 grid-rows-1">
+        <div>
+            <img class="w-full h-full" src="/Assets/boysShoesLS.jpg">
+        </div>
+        <div class="flex-col flex-justify-center flex-align-center gap-1">
+            <p class="h1 font-bold">King of Shoes</p>
+            <p class="h4">Best Value @ Rs.999</p>
+            <a class="btn btn-primary m-1 p-0-75 rounded-md">Explore</a>
+        </div>
+    </div>
+
+    <!-- Grid 70-30 Layout -->
+
+    <div class="grid-70-30-layout m-1 grid grid-cols-3 grid-rows-1">
+        <div class="grid-col-span-2">
+            <img class="w-full h-full" src="/Assets/boysShoesLS.jpg">
+        </div>
+        <div class="flex-col flex-justify-center flex-align-center gap-1">
+            <p class="h1 font-bold">King of Shoes</p>
+            <p class="h4">Best Value @ Rs.999</p>
+            <a class="btn btn-primary m-1 p-0-75 rounded-md">Explore</a>
+        </div>
+    </div>
+
+     <!-- Grid 30-70 Layout -->
+
+     <div class="grid-30-70-layout m-1 grid grid-cols-3 grid-rows-1">
+        <div>
+            <img class="w-full h-full" src="/Assets/boysShoesLS.jpg">
+        </div>
+        <div class="grid-col-span-2 flex-col flex-justify-center flex-align-center gap-1">
+            <p class="h1 font-bold">King of Shoes</p>
+            <p class="h4">Best Value @ Rs.999</p>
+            <a class="btn btn-primary m-1 p-0-75 rounded-md">Explore</a>
+        </div>
+    </div> 
+
+     <!-- Grid multi-column Layout -->
+
+    <div class="grid grid-col-autofit-w-25">
+
+        <!-- Card Basic -->
+        
+        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+            <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed heel.</p>
+            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                <div>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                </div>
+                <div>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card with Badge -->
+
+        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+            <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed heel.</p>
+            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                <div>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                </div>
+                <div>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+            <span class="card-badge text-badge-highlight m-0-25 px-0-75 py-0-25 rounded-md text-md w-fit absolute">New</span>
+        </div>
+
+        <!-- Card with Dismiss -->
+
+        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+            <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed heel.</p>
+            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                <div>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                </div>
+                <div>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="card-dismiss-button card-button absolute text-lg"><i class="fa-regular fa-circle-xmark"></i></button>
+        </div>
+
+        <!-- Card with Text Overlay -->
+
+        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+            <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed heel.</p>
+            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                <div>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                </div>
+                <div>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-text-overlay-container absolute flex-row flex-justify-center flex-align-center w-full h-full rounded-inherit">
+                <p class="text-xl">Sold Out</p>
+            </div>
+            
+        </div>
+
+        <!-- Card Basic -->
+
+        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+            <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed heel.</p>
+            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                <div>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                </div>
+                <div>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card with Badge -->
+
+        <div class="card-container relative flex-col flex-justify-start h-fit w-23 m-1 rounded-md">
+            <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="w-full h-60-pc rounded-inherit">
+            <p class=" mx-0-75 my-0-5 h3">Artistic Weapon</p>
+            <p class="card-subtitle mx-0-75 h6">Indian Mother's/Gf's Brahmastra</p>
+            <p class="card-para mx-0-75 my-1-5 text-sm-2">Will hit best when aimed for head with pointed heel.</p>
+            <div class="flex-row flex-justify-between flex-align-center mx-0-75 my-0-5">
+                <div>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Buy</button>
+                    <button class="card-button m-0 p-0-5 font-bold text-md rounded-sm">Add to Cart</button>
+                </div>
+                <div>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <button class="card-button mr-0-25 p-0-25 text-md rounded-sm">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </div>
+            <span class="card-badge text-badge-highlight m-0-25 px-0-75 py-0-25 rounded-md text-md w-fit absolute">New</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
