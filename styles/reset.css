@@ -84,37 +84,60 @@ h6 {
     font-weight: var(--weight-bold);
 }
 
-h1 {
+h1,
+.h1 {
     font-size: var(--h1);
     line-height: var(--line-ht-xxl);
 }
 
-h2 {
+h2,
+.h2 {
     font-size: var(--h2);
     line-height: var(--line-ht-xl);
 }
 
-h3 {
+h3,
+.h3 {
     font-size: var(--h3);
     line-height: var(--line-ht-lg);
 }
 
-h4 {
+h4,
+.h4 {
     font-size: var(--h4);
     line-height: var(--line-ht-lg);
 }
 
-h5 {
+h5,
+.h5 {
     font-size: var(--h5);
     line-height: var(--line-ht-md);
 }
 
-h6 {
+h6,
+.h6 {
     font-size: var(--h6);
     line-height: var(--line-ht-sm);
 }
 
-.bold {
+/* Font weights */
+.font-thin {
+    font-weight: var(--weight-thin);
+}
+
+.font-light {
+    font-weight: var(--weight-light);
+}
+
+.font-regular {
+    font-weight: var(--weight-regular);
+}
+
+.font-sbold {
+    font-weight: var(--weight-sbold);
+}
+
+.font-bold {
     font-weight: var(--weight-bold);
 }
 
@@ -159,6 +182,34 @@ h6 {
     line-height: var(--line-ht-xxl);
 }
 
+.text-xxxl {
+    font-size: var(--text-xxxl);
+    line-height: var(--line-ht-xxxl);
+}
+
 .text-center {
     text-align: center;
 }
+
+/* Positions */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+   position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.static {
+    position: static;
+}
+

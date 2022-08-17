@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./badges.css">
+    <script src="https://kit.fontawesome.com/fa8f01e628.js" crossorigin="anonymous"></script>
+    <title>Badges</title>
+</head>
+
+<body>
+
+    <!-- Avatar Live Status Badges -->
+
+    <div class="relative w-15 h-15">
+        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+        <span class="status absolute online w-3 h-3 rounded-full"></span>
+    </div>
+
+    <div class="relative w-10 h-10">
+        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+        <span class="status absolute offline w-2 h-2 rounded-full"></span>
+    </div>
+
+    <div class="relative w-5 h-5">
+        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+        <span class="status absolute idle w-1 h-1 rounded-full"></span>
+    </div>
+
+    <div class="relative w-3 h-3">
+        <img class="w-full h-full rounded-full" src="https://i.pravatar.cc/?" alt="Badge Avatar">
+        <span class="status absolute online w-0-75 h-0-75 rounded-full"></span>
+    </div>
+
+    <!-- Icon Notification Badges -->
+
+    <div class="relative mx-0-5 my-1 w-max h-max">
+        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+        <span
+            class="badge-notification-count absolute w-2-5 h-2-5 p-1 rounded-full font-bold flex-row flex-justify-center flex-align-center text-md">5
+        </span>
+    </div>
+
+    <div class="relative mx-0-5 my-1 w-max h-max">
+        <i class="fa-solid fa-bell fa-2xl"></i>
+        <span
+            class="badge-notification-count absolute w-2-5 h-2-5 p-1 rounded-full font-bold flex-row flex-justify-center flex-align-center text-md">8
+        </span>
+    </div>
+
+    <!-- Heading Badges -->
+
+    <h1 class="relative">This is example of h1 Heading with
+        Badge <span class="absolute heading-badge-primary font-light text-md m-0-25 p-0-25 rounded-xs"> New
+        </span>
+    </h1>
+
+    <h2 class="relative">This is example of h2 Heading with
+        Badge <span class="absolute heading-badge-primary font-light text-sm m-0-25 p-0-25 rounded-xs">
+            Pending </span>
+    </h2>
+
+    <h3 class="relative">This is example of h3 Heading with Badge <span
+            class="absolute heading-badge-primary font-light text-sm m-0-25 p-0-25 rounded-full"> New </span>
+    </h3>
+
+    <h4 class="relative">This is example of h4 Heading with Badge <span class="absolute heading-badge-secondary font-light text-xs m-0-25 p-0-25 rounded-xs"> New
+        </span>
+    </h4>
+
+    <h5 class="relative">This is example of h5 Heading with Badge <span class="absolute heading-badge-secondary font-light text-xs m-0-25 p-0-25 rounded-xs">
+            Pending </span>
+    </h5>
+
+    <h6 class="relative">This is example of h6 Heading with Badge <span
+            class="absolute heading-badge-secondary font-light text-xxs m-0-25 p-0-25 rounded-xs"> New </span>
+    </h6>
+
+    <!-- Text Badges -->
+
+    <span class="text-badge-primary m-0-25 px-0-75 py-0-25 rounded-xs text-md">Sale</span>
+
+    <span class="text-badge-secondary m-0-25 px-0-75 py-0-25 rounded-full text-md">Sold</span>
+    
+    <span class="text-badge-highlight m-0-25 px-0-75 py-0-25 rounded-sm text-md">New</span>
+    
+    <span class="text-badge-secondary m-0-25 px-0-75 py-0-25 rounded-md text-md">Out of Stock</span>
+
+</body>
+
+</html>
