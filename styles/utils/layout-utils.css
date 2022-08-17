@@ -46,6 +46,10 @@
     border-radius: var(--br-0);
 }
 
+.rounded-inherit {
+    border-radius: inherit;
+}
+
 /* For pill buttons */
 .rounded-full {
     border-radius: var(--br-max);
