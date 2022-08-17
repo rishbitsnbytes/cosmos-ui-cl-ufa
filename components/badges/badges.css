@@ -22,10 +22,9 @@
 /* Icon Notification Badges */
 
 .badge-notification-count {
-    top: -80%;
-    right: -40%;
-    background-color: var(--color-badge-bg);
-    border: 2px solid var(--white);
+    top: -50%;
+    right: -50%;
+    background-color: var(--color-tertiary);
     color: var(--white);
 }
 

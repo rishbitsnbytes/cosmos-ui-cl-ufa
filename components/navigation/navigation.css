@@ -1,0 +1,46 @@
+@import url(../../styles/all-imports.css);
+
+.nav-bar {
+    background-color: var(--color-secondary);
+}
+
+.nav-logo {
+    border: 1px solid var(--color-tertiary);
+}
+
+.nav-logo-title:hover {
+    color: var(--color-text-active);
+}
+
+/* <!-- search bar --> */
+
+.search-bar {
+    background-color: var(--color-search-bar-bg);
+    color: var(--color-text-primary);
+}
+
+.search-bar:hover {
+    outline: 1px solid var(--color-tertiary);
+}
+
+.search-bar:focus-within {
+    outline: 2px solid var(--color-tertiary);
+}
+
+.search-bar-input{
+    width: calc(100% - 2rem);
+    border: none;
+    background-color: unset;
+    outline: 0px;
+}
+
+/* <!-- Icons and Buttons --> */
+
+.nav-actions-container .btn-logout {
+    background-color: var(--color-tertiary) ;
+    color: var(--white); 
+}
+
+.nav-actions-container .btn:hover :not(.btn-logout:hover, .badge-notification-count)  {
+    color: var(--color-tertiary);
+}

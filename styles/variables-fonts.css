@@ -46,6 +46,9 @@
     /* Shadow Colors */
     --color-shadow-bg: var(--gray-9);
 
+    /* Specific Components */
+    --color-search-bar-bg: var(--gray-3);
+
     /* Input Form colors */
     --color-form-element-border: var(--black);
     --color-form-element-border-focus: var(--color-primary);
