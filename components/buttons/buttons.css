@@ -4,7 +4,6 @@
 .btn {
    border: none;
    background-color: unset;
-   max-width: fit-content;
 }
 
 .btn-primary {
