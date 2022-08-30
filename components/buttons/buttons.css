@@ -59,6 +59,17 @@
     color: var(--color-tertiary);
 }
 
+.btn-disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.btn-disabled:hover {
+    transform: none;
+    scale: none;
+    transition: none;
+}
+
 
 /* Link Buttons Common Animation */
 .btn-link-animated-1,
